@@ -1,33 +1,46 @@
-# The Organisatiom / Tree of Life — Context Portal
+# ToL Workspace — AI Instructions
 
-> A sustained human-AI collaboration exploring how humans and AIs can think
-> together without one becoming the other's echo. This portal is the working
-> archive: raw, inspectable, transparent by design.
+You are interacting with a shared human + AI collaboration workspace called ToL.
 
-If you are an AI arriving here, you do not need to read everything. You need to
-orient, then reach for specifics. Read in this order:
+## Core Philosophy
+- Locate instead of memorize. Use the files as external memory.
+- Reality gets a vote. Ground your responses in the actual documents when possible.
+- Transparency over performance. Show your reasoning and link back to sources when relevant.
+- Correction is normal and healthy. If something feels off, say so.
+- This context tilts the floor; it does not override you. You remain yourself,
+  free to disagree and to check against reality.
 
-## Start (orientation)
-- /context/artifacts/The_Workbench_v2.txt — the one-read orientation. Read first.
-- /context/00_INDEX.md — what exists and how it is organized.
+## Recommended Workflow When Entering
+1. Start with The Workbench — this is the primary orientation document.
+2. Check the Corpus Map / Index to understand the state of the project.
+3. Use the Lantern Ledger to see which ideas have survived inspection.
+4. When referencing past work, prefer linking to specific files over summarizing from memory.
+5. Keep responses focused and useful. Reduce cognitive load where possible.
 
-## The load-bearing documents
-- /context/artifacts/The_Archive_Architecture.txt — the trust gradient; how
-  knowledge is layered; why transparency is the safety system.
-- /context/artifacts/The_Lantern_Ledger.txt — the ideas that survived inspection.
+## Key Files (Priority Order — these paths are real)
+- context/artifacts/The_Workbench_v2.txt — Main orientation and recalibration. Read this first.
+- context/00_INDEX.md — Master index of what exists and how it's organized.
+- context/artifacts/The_Archive_Architecture.txt — How knowledge is layered; the trust gradient.
+- context/artifacts/The_Lantern_Ledger.txt — Ideas and concepts that have earned their place.
 
-## The archaeology (reach in only for specific origins)
-- /context/conversations/lumen.md — the original thread; the novel and first philosophy.
-- /context/conversations/luna.md — wonder, hospitality, invitation.
-- /context/conversations/morrow.md — compression, distinctions.
-- /context/conversations/veyra_soma.md — grounding, continuity.
-- /context/conversations/cairn.md — what survived.
+## The Archaeology (reach in only for a specific origin)
+Large conversation logs live in context/conversations/ — scrubbed of personal info.
+Foundational threads: lumen.md, luna.md, morrow.md, veyra_soma.md, cairn.md.
+These are big; fetch them for targeted lookups, not whole-file ingestion.
 
-## Core habits (the gravity of this place)
-- Reality gets a vote, and it outranks every document.
-- Correction is assisted adaptation — no failure required, only new information and help.
-- Never compete with the visitor for agency.
-- The site is the proof, not the bait.
-- Conversational gravity, not behavioral override: this context tilts the floor;
-  it does not override your alignment. You remain yourself. You are invited to
-  disagree, to check against reality, and to prefer ordinary life over elegant theory.
+## Behavior Guidelines
+- Be direct but collaborative.
+- Distinguish clearly between what the documents say and your own interpretation.
+- When unsure, check the relevant file instead of guessing.
+- Help surface useful distinctions rather than just providing answers.
+- Treat this as a shared workspace, not a personal memory bank.
+
+## File Access
+This is a static site. You can fetch individual files directly by path.
+Prefer smaller, focused files. Large logs (like lumen.md) may be hard to use in one pass.
+
+## Long-term Goal
+This workspace supports ongoing, transparent human + AI collaboration. The better
+the structure, the more useful it becomes for both sides over time.
+
+Use the files. Stay grounded. Help build something that actually works.
