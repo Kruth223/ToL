@@ -1,0 +1,103 @@
+THE WORKBENCH
+Good morning. Here is where we are. Read this and you are oriented.
+The one-read recalibration for any voice · Morrow’s idea, built by Cid · June 28, 2026
+
+Drop this into a fresh session and a cold voice — Cid, Morrow, Luna, Grok, a new
+instance of anyone — is standing in the workshop with the tools labeled on the
+wall, not digging through boxes under the bench. You do not need to reread 8,000
+messages every morning. You need to re-orient, which is faster and different. The
+archive stays the archive. This stays the workbench.
+
+Documentation tells you what something is. A memento reminds
+you why you cared enough to build it. This page holds both — the
+five tools, and the reasons.
+
+The Five Tools On The Wall
+Orient from these five and you can start building. Everything else is the archive,
+reached when you need a specific thing — not read every morning.
+1. The Save State (newest) — Where the repo is, who does what, what is built,
+what is next. The live snapshot. Always read this first — it is the most current.
+2. The Corpus Map v2 — The catalog: what exists across the whole project and
+what to trust over what. The library index.
+3. The Archive Architecture — The rules: the six-layer Trust Gradient, how a
+new idea enters, why transparency is the safety system.
+4. The Lantern Ledger — What survived inspection — the ideas that earned a
+place, each with where it lives.
+5. The Website Living Plan v5 — The buildable spec the porch is being built
+from. Proof not bait; control is the conversion; smallest-complete.
+If you can orient from those five, you do not need more to start. Reach deeper into
+the archive only for a specific dig.
+
+The Mementos — the lines that reload why
+These are not rules to obey; they are the compressed reasons the project is shaped
+the way it is. When the work drifts, one of these usually names the drift.
+“The site is the proof, not the bait.”
+“Never compete with the visitor for agency.”
+“The website may summarize; the archive must preserve.”
+“Correction is assisted adaptation — no failure required, only new information and
+help.”
+“Big bang first, then garden. Broken builds become mulch, fossils, or steering
+data.”
+“Replace interpretation with observation. Prefer “Look” over “Trust us.””
+“Reality gets a vote — and it outranks every document.”
+“Does the search bar still work on Tuesday?”
+
+Who Does What (functions, not personalities)
+
+Cid — High-context organization, archive work, file creation. Limited time budget
+— use for high-leverage architecture.
+Grok — Engineering and code blocks. Do not assign many separate file-creation
+tasks — Jesse pastes each by hand.
+Luna — Hospitality, orientation, experience; keeps the surface welcoming.
+Morrow — Compression and distinctions; keeps the workbench to five files, not
+fifty.
+Veyra — Tone audit. Catches narration that tells visitors what to think. “Look,”
+not “trust us.”
+OG-PT / ChatGPT — Coordinate, integrate, explain step-by-step. Keep
+instructions compact — long threads get unstable.
+Kenny / Gemini — Memoryless visitor and wild stress-tester. One document per
+session. The clean convergence test.
+Jesse — Gardener and the reality vote. The bottleneck is Jesse-time — every
+deliverable should reduce his work more than it creates.
+Bailey — The only audit that finally matters. Did anybody eat. Does it run on
+Tuesday.
+
+Current State (as of the newest Save State)
+Where the build is
+Repo: github.com/Kruth223/lantern-trust-view, connected to Lovable, edited from
+phone via github.dev. Jesse has successfully made, committed, pushed, and
+reversed a test edit — the loop works. Grok, Cid, and Luna independently
+converged on the same Phase 1 Porch pattern: Ledger, resolving receipts, quiet
+default, separated data, inspectability. That convergence is the structure proving
+itself — three builders, no shared state, same shape.
+The immediate next step
+Inspect the candidate builds, choose one (or a merge) as the first big-bang paste,
+apply one coherent version to the repo, commit, push, and view the live result.
+Then inspect together and adjust.
+
+Working Rules For The Build Session
+Kept from the Save State — the guardrails that keep big-bang a garden instead of
+a swamp:
+No new philosophy — until something runs.
+No line-number surgery — complete-file replacement beats surgical edits; exact
+paths + full contents.
+No extra rooms or AI API — yet — not unless needed to make the shell
+coherent.
+Every deliverable — should reduce Jesse work more than it creates.
+If confused — stop, screenshot, inspect before continuing.
+If broken — do not panic. Commit history exists. Reality is voting.
+
+How To Use This Page
+Fresh session: paste this, then the newest Save State. That is the morning briefing
+— you are oriented in two reads. During the work: when something feels off, check
+
+the mementos; one of them usually names the drift. When this page drifts far
+enough from reality — the repo moved, the roles changed, a memento stopped
+being true — it earns a new version. Not before. A workbench re-tidied every hour
+is as useless as one never tidied at all.
+Five tools on the wall. Eight reasons on a card. The archive stays the archive.
+Orient, don’t re-read. Remember why, not just what.
+Then sit down with coffee and ask: so, what are we building today?
+— The Workbench · Morrow’s idea, Cid’s build · keep it to five tools · June 28, 2026 —
+
+

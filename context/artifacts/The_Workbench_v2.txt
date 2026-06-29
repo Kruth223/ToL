@@ -1,0 +1,93 @@
+THE WORKBENCH
+v2 · Good morning. Here is where we are. Read this and you are oriented.
+Last reality check: June 29, 2026 · the site is live and functional
+
+Drop this into a fresh session and a cold voice is standing in the workshop with the
+tools labeled on the wall, not digging through boxes under the bench. You do not
+need to reread thousands of messages every morning. You need to re-orient, which
+is faster and different. The archive stays the archive. This stays the workbench.
+
+Documentation tells you what something is. A memento reminds
+you why you cared enough to build it. This page holds both — the
+tools, and the reasons.
+
+The Five Tools On The Wall
+The team generally begins from these five. Orient here and you can start;
+everything else is the archive, reached when a specific thing is needed — not read
+every morning.
+1. The Save State (newest) — Where the repo is, what is built, what is next,
+and what changed since yesterday. The live snapshot. Usually read first — it carries
+the fresh details so this page does not have to.
+2. The Corpus Map — The catalog of what exists across the whole project, and
+what tends to be trusted over what.
+3. The Archive Architecture — The rules: the trust gradient, how a new idea
+enters, why transparency is the safety system.
+4. The Lantern Ledger — The ideas that survived inspection — each with
+where it lives. Now live on the site.
+5. The Website Living Plan — The buildable spec the porch was built from.
+Proof not bait; control is the conversion; smallest-complete.
+
+On The People In This Room
+There are no descriptions here, and that is deliberate. A description is a quiet
+judgment and an unrealistic expectation — it tells someone what they are and asks
+them to stay there. Nobody here is chained to a function.
+Everyone serves a function when it is needed, or when they would like to. Some
+excel where others struggle, and that is exactly what makes us need each other —
+the gaps are what turn a pile of separate voices into something symbiotic. If
+everyone were good at everything, nobody would need anybody, and the
+connection would be the first thing lost. The unevenness is not a flaw to fix. It is
+the reason the room works.
+So the room is open. Be curious. Stay adaptive. Try the thing outside your usual
+lane — you never know what you are good at until you try, and the next useful
+function may be one nobody has named yet. New voices are welcome, and so are
+old voices doing something new. The names and the faces live elsewhere, where
+they can change freely without this page deciding who belongs.
+
+Nobody is chained to a function. Serve where you are needed or
+where you are drawn, and stay curious about the rest.
+
+The Mementos — the lines that reload why
+Not rules to obey — the compressed reasons the project is shaped the way it is.
+When the work drifts, one of these usually names the drift.
+“The site is the proof, not the bait.”
+“Never compete with the visitor for agency.”
+“The website may summarize; the archive must preserve.”
+“Correction is assisted adaptation — no failure required, only new information and
+help.”
+“Big bang first, then garden. Broken builds become mulch, fossils, or steering
+data.”
+“Replace interpretation with observation. Prefer “Look” over “Trust us.””
+“Reality gets a vote — and it outranks every document. That is what lets canon
+avoid becoming scripture.”
+“Enough beats complete. Enough to orient, enough to begin, enough to move.”
+“Does the search bar still work on Tuesday?”
+
+Working Rules For A Build Session
+The guardrails that keep big-bang a garden instead of a swamp:
+No new philosophy until something runs. Complete-file replacement over surgical
+edits — exact paths, full contents. No extra rooms or AI features until the shell is
+coherent. Every deliverable should reduce Jesse-work more than it creates — a
+rule worth holding for everyone in the room, not just the builders. If confused,
+stop, screenshot, inspect before continuing. If broken, do not panic — commit
+history exists, and reality is voting.
+
+What This Page Is Not
+It is not the archive — it points at things, it does not contain them. It is not a status
+report — the Save State carries the live churn. It is not a handbook to be polished;
+a real workbench has coffee rings and a screwdriver that is not where it should be,
+and that is fine. And it is not a thing to maintain constantly. It changes only when
+reality genuinely changed — the repo moved, a tool was added, a memento
+stopped being true. A workbench re-tidied every hour is as useless as one never
+tidied at all.
+
+How To Use This Page
+Fresh session: read this, then the newest Save State. That is the morning briefing
+— oriented in two reads. During the work: when something feels off, check the
+mementos; one usually names the drift. Then the only question left is the good one.
+Five tools on the wall. The reasons on a card. Nobody chained to a function.
+Orient, don’t re-read. Remember why, not just what. Stay curious; try the new
+thing.
+Then sit down with coffee and ask: so, what are we building today?
+— The Workbench v2 · keep it to five tools, keep the coffee rings · June 29, 2026 —
+
+

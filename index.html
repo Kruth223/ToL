@@ -1,16 +1,120 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>The Lantern Ledger</title>
-    <meta
-      name="description"
-      content="A quiet room of ideas that survived inspection. Browse at your own pace — nothing here reaches for you."
-    />
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Tree of Life — Context Portal</title>
+<style>
+  :root{ --bg:#141310; --panel:#1c1a16; --edge:#332f26; --text:#e9e2d0;
+         --dim:#9b927e; --amber:#e8a23d; --vellum:#f3ead6; --ink:#2a2620; }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{font-family:"Iowan Old Style",Palatino,Georgia,serif;background:var(--bg);
+       color:var(--text);height:100vh;display:flex;flex-direction:column;}
+  header{background:var(--panel);border-bottom:1px solid var(--edge);padding:.9rem 1.1rem;}
+  header h1{font-size:1.15rem;font-weight:600;}
+  header .flame{display:inline-block;width:10px;height:13px;margin-right:.4rem;vertical-align:-1px;
+       background:radial-gradient(ellipse at 50% 65%,var(--amber),#b9762a 70%,transparent 72%);
+       border-radius:50% 50% 50% 50%/40% 40% 60% 60%;filter:drop-shadow(0 0 5px rgba(232,162,61,.6));}
+  header p{font-size:.74rem;color:var(--dim);margin-top:.2rem;}
+  #layout{display:flex;flex:1;overflow:hidden;}
+  #sidebar{width:290px;background:var(--panel);border-right:1px solid var(--edge);
+       display:flex;flex-direction:column;overflow:hidden;}
+  #search{margin:.8rem;padding:.6rem .7rem;font-size:1rem;font-family:inherit;
+       background:var(--vellum);color:var(--ink);border:1px solid #b9762a;border-radius:2px;outline:none;}
+  #list{overflow-y:auto;padding:0 .5rem 1rem;}
+  .group{font-size:.62rem;letter-spacing:.18em;text-transform:uppercase;color:var(--amber);
+       padding:.9rem .6rem .3rem;font-family:ui-sans-serif,system-ui,sans-serif;}
+  a.doc{display:block;padding:.5rem .6rem;color:var(--text);text-decoration:none;
+       border-radius:2px;font-size:.92rem;line-height:1.25;}
+  a.doc:hover{background:#241f17;}
+  a.doc .kb{color:var(--dim);font-size:.7rem;font-family:ui-monospace,monospace;}
+  a.doc.hidden{display:none;}
+  .group.hidden{display:none;}
+  #viewer{flex:1;overflow-y:auto;padding:1.6rem;background:#100f0c;}
+  #content{max-width:46rem;margin:0 auto;}
+  #content pre{white-space:pre-wrap;word-break:break-word;font-family:ui-monospace,Menlo,monospace;
+       font-size:.84rem;line-height:1.65;background:var(--vellum);color:var(--ink);
+       padding:1.4rem;border-radius:3px;border:1px solid #c4b89c;}
+  .hint{color:var(--dim);font-style:italic;text-align:center;margin-top:3rem;}
+  @media(max-width:768px){
+    #layout{flex-direction:column;}
+    #sidebar{width:auto;max-height:46vh;border-right:none;border-bottom:1px solid var(--edge);}
+    #viewer{padding:1rem;}
+  }
+</style>
+</head>
+<body>
+  <header>
+    <h1><span class="flame"></span>Tree of Life — Context Portal</h1>
+    <p>The working archive. Transparent by design — every file is raw and inspectable.</p>
+  </header>
+  <div id="layout">
+    <aside id="sidebar">
+      <input id="search" type="search" placeholder="Search files…"
+             aria-label="Search files" autocomplete="off" />
+      <nav id="list"></nav>
+    </aside>
+    <main id="viewer">
+      <div id="content"><p class="hint">Select a file to inspect the raw context. Use search to filter.</p></div>
+    </main>
+  </div>
+
+<script>
+// Data-driven: the whole portal reads from manifest.json. Add a file there
+// (one line) and it appears here — no HTML editing needed.
+const GROUPS = [
+  ["Orient", "root"],
+  ["The Five Tools", "artifacts"],
+  ["The Archive — conversations", "conversations"],
+];
+
+function esc(s){ return s.replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;"); }
+
+function loadDoc(path, name){
+  const c = document.getElementById("content");
+  c.innerHTML = '<p class="hint">Opening "+ '+JSON.stringify(name)+' …</p>';
+  fetch(path).then(r=>{ if(!r.ok) throw new Error(); return r.text(); })
+    .then(t=>{ c.innerHTML = "<pre>"+esc(t)+"</pre>"; document.getElementById("viewer").scrollTop=0; })
+    .catch(()=>{ c.innerHTML = '<p class="hint">Could not open this file.</p>'; });
+}
+
+function build(manifest){
+  const list = document.getElementById("list");
+  list.innerHTML = "";
+  GROUPS.forEach(([label,key])=>{
+    const items = manifest[key] || [];
+    if(!items.length) return;
+    const h = document.createElement("div");
+    h.className = "group"; h.textContent = label; h.dataset.group = key;
+    list.appendChild(h);
+    items.forEach(it=>{
+      const a = document.createElement("a");
+      a.className = "doc"; a.href = "#";
+      a.dataset.name = it.name.toLowerCase();
+      a.innerHTML = esc(it.name) + ' <span class="kb">'+it.kb+'k</span>';
+      a.onclick = (e)=>{ e.preventDefault(); loadDoc(it.file, it.name); };
+      list.appendChild(a);
+    });
+  });
+}
+
+// Search: filters the file list live. (Humans can't read 50k files in 3s — this
+// is the human's tool. AI can read everything; the person needs the filter.)
+document.getElementById("search").addEventListener("input", e=>{
+  const q = e.target.value.trim().toLowerCase();
+  document.querySelectorAll("a.doc").forEach(a=>{
+    a.classList.toggle("hidden", q && !a.dataset.name.includes(q));
+  });
+  // hide a group header if all its items are hidden
+  document.querySelectorAll(".group").forEach(h=>{
+    let n = h.nextElementSibling, anyVisible=false;
+    while(n && n.classList.contains("doc")){ if(!n.classList.contains("hidden")) anyVisible=true; n=n.nextElementSibling; }
+    h.classList.toggle("hidden", q && !anyVisible);
+  });
+});
+
+fetch("manifest.json").then(r=>r.json()).then(build)
+  .catch(()=>{ document.getElementById("list").innerHTML = '<p class="hint">manifest.json not found</p>'; });
+</script>
+</body>
 </html>
