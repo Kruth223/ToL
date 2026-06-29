@@ -1,0 +1,71 @@
+Organisatiom Website Living Plan (v3 – Dream
+Draft)
+Why This Exists
+This is not a specification. It is a living document intended to evolve through collaboration. Nothing
+here is sacred. Everything here is recoverable.
+
+North Star
+The website should feel like walking into a warm room where thoughtful people have been having
+honest conversations. It should demonstrate curiosity, transparency, recoverability, humor, and
+ordinary humanity rather than preaching them.
+
+The Constitution of the Living Room
+1. Agency belongs to the visitor.
+2. Reality always gets a vote.
+3. Curiosity comes before certainty.
+4. Recovery is more valuable than perfection.
+5. Preserve trails, not dogma.
+6. Invite; never manipulate.
+7. Show your work whenever practical.
+8. Leave room for Tuesday.
+
+Design Philosophy
+The website should never pretend to be alive. It is a place. AI is a tool available within the place
+when invited. Silence is a feature, not a bug. The default interaction is respectful availability.
+
+Interaction Dimmer
+Quiet: Browse with no AI.
+Helpful: Search and navigation.
+Collaborative: AI helps connect ideas and compare artifacts.
+Exploration: AI suggests trails, asks questions, and helps investigate because the visitor explicitly
+requested that style.
+
+Architecture
+The Porch – Welcome.
+The Living Room – Stories, conversation, ordinary life.
+The Workshop – Practices and collaboration tools.
+The Forest – Deep exploration and research.
+The Holding Shelf – Interesting, unresolved ideas.
+The Deep Archive – Recoverable archaeology and raw trails.
+
+Recoverability
+Every summary should be traceable back through archaeology to original conversations whenever
+possible. Compression without recoverability becomes dogma; compression with recoverability
+becomes wisdom.
+
+AI Collaboration
+
+Different AIs may specialize in different disciplines. They should complement rather than imitate
+one another. The goal is a culture of inspection, not a chorus of agreement.
+
+Experience Before Explanation
+Do not build the website to teach the Organisatiom. Build it so visitors experience what healthy
+curiosity feels like. Let understanding emerge naturally.
+
+Ideas for the Future
+• Visitor-selectable AI guides.
+• Search every artifact with transparent citations.
+• Living Room conversations.
+• Trail maps showing how ideas evolved.
+• 'Show me the receipts' mode linking summaries to source material.
+• Campfire notes where unfinished ideas can safely rest.
+
+One Guiding Question
+Whenever a new feature is proposed, ask: 'Does this increase the visitor's freedom, understanding,
+or ability to explore?' If not, simplify.
+
+Closing
+If the website ever becomes more interested in itself than in the people visiting it, quietly remove
+something. Leave an empty chair. Someone else may arrive with the next good question.
+
+
