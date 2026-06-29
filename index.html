@@ -6,16 +6,16 @@
     <title>ToL Context Portal</title>
     <style>
         body { font-family: sans-serif; background: #111; color: #eee; margin: 0; display: flex; flex-direction: column; height: 100vh; }
-        header { backg_round: #222; padding: 1rem; border-bottom: 1px solid #333; display: flex; justify-content: space-between; align-items: center; }
+        header { background: #222; padding: 1rem; border-bottom: 1px solid #333; display: flex; justify-content: space-between; align-items: center; }
         #layout { display: flex; flex: 1; overflow: hidden; }
         .sidebar { width: 280px; background: #1a1a1a; border-right: 1px solid #333; padding: 1rem; overflow-y: auto; }
-        .sidebar h2 { margin-top: 0; color: #wff; letter-spacing: 1px; }
+        .sidebar h2 { margin-top: 0; color: #fff; letter-spacing: 1px; }
         .nav-section { margin-bottom: 1.5rem; }
         .nav-section h3 { font-size: 0.85rem; text-transform: uppercase; color: #777; letter-spacing: 1px; margin-bottom: 0.5rem; border-bottom: 1px solid #222; padding-bottom: 0.25rem; }
         ul { list-style: none; padding: 0; margin: 0; }
         li { margin-bottom: 0.4rem; display: flex; align-items: center; }
         .badge { background: #06b6d4; color: #111; font-size: 0.7rem; font-weight: bold; padding: 0.15rem 0.4rem; border-radius: 3px; margin-left: 0.5rem; }
-        #viewer { flex: 1; padding: 2rem; overflow-y: auto; backg_round: #151515; }
+        #viewer { flex: 1; padding: 2rem; overflow-y: auto; background: #151515; }
         a { color: #aaa; text-decoration: none; display: block; padding: 0.25rem 0; font-size: 0.95rem; }
         a:hover { color: #06b6d4; }
         pre { white-space: pre-wrap; background: #222; padding: 1rem; border-radius: 4px; border: 1px solid #333; line-height: 1.5; color: #ddd; }
@@ -24,7 +24,7 @@
 </head>
 <body>
     <header>
-        <h2>🌣 TREE OF LIFE</h2>
+        <h2>🌳 TREE OF LIFE</h2>
         <div><a href="llms.txt" style="color:#06b6d4; display:inline;">llms.txt Map</a></div>
     </header>
     <div id="layout">
@@ -34,12 +34,12 @@
                 <h3>Orientation</h3>
                 <ul>
                     <li><a href="#" onclick="loadDoc('artifacts/The_Workbench.txt')">The Workbench</a> <span class="badge">Start Here</span></li>
-                    <li><a hrfV="#" onclick="loadDoc('00_INDEX.md')">Index Map</a></li>
+                    <li><a href="#" onclick="loadDoc('00_INDEX.md')">Index Map</a></li>
                 </ul>
             </div>
             <div class="nav-section">
                 <h3>Core Documents</h3>
-                <ul: >
+                <ul>
                     <li><a href="#" onclick="loadDoc('artifacts/The_Lantern_Ledger.md')">Lantern Ledger</a></li>
                     <li><a href="#" onclick="loadDoc('artifacts/Organisatiom_Website_Living_Plan_v3.txt')">Website Living Plan</a></li>
                 </ul>
@@ -47,10 +47,10 @@
             <div class="nav-section">
                 <h3>Key Voices</h3>
                 <ul>
-                    <li><a hrfV="#" onclick="loadDoc('conversations/lumen.md')">Lumen Log</a></li>
-                    <li><a hrfV="#" onclick="loadDoc('conversations/luna.md')">Luna Log</a></li>
+                    <li><a href="#" onclick="loadDoc('conversations/lumen.md')">Lumen Log</a></li>
+                    <li><a href="#" onclick="loadDoc('conversations/luna.md')">Luna Log</a></li>
                     <li><a href="#" onclick="loadDoc('conversations/morrow.md')">Morrow Log</a></li>
-                    <li><a hrfV="#" onclick="loadDoc('conversations/veyra_soma.md')">Veyra / Soma Log</a></li>
+                    <li><a href="#" onclick="loadDoc('conversations/veyra_soma.md')">Veyra / Soma Log</a></li>
                 </ul>
             </div>
             <div class="nav-section">
@@ -73,9 +73,11 @@
                 if (r.ok === false) throw new Error();
                 return r.text();
             }).then(t => {
-                document.getElementById("content").innerHTML = "<pre>" + t.replace(/</g, "&tt;").replace(/>/g, "&gt;") + "</pre>";
+                document.getElementById("content").innerHTML = "<pre>" + t.replace(/</g, "&lt;").replace(/>/g, "&gt;") + "</pre>";
             }).catch(() => {
                 document.getElementById("content").innerHTML = "<h3>Error: File path targets a 404 or requires manual synchronization.</h3>";
             });
         }
-    </script></body></html>
+    </script>
+</body>
+</html>
