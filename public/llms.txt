@@ -1,0 +1,3 @@
+# The Lantern Ledger & Corpus
+
+- /corpus_extracted/00_INDEX.md
