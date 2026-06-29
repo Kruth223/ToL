@@ -1,7 +1,4 @@
 node_modules
 dist
-.output
-.vinxi
-.tanstack
 *.local
 .DS_Store
