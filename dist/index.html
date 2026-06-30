@@ -3,118 +3,198 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Tree of Life — Context Portal</title>
+<title>Tree of Life — A Shared Workspace</title>
+<meta name="description" content="A shared workspace for human + multi-AI collaboration. Start at the Workbench. Transparent by design." />
 <style>
-  :root{ --bg:#141310; --panel:#1c1a16; --edge:#332f26; --text:#e9e2d0;
-         --dim:#9b927e; --amber:#e8a23d; --vellum:#f3ead6; --ink:#2a2620; }
+  :root{ --bg:#141310; --panel:#1c1a16; --panel2:#231f17; --edge:#332f26;
+         --text:#e9e2d0; --dim:#9b927e; --amber:#e8a23d; --amber2:#b9762a;
+         --vellum:#f3ead6; --ink:#2a2620; }
   *{box-sizing:border-box;margin:0;padding:0;}
   body{font-family:"Iowan Old Style",Palatino,Georgia,serif;background:var(--bg);
-       color:var(--text);height:100vh;display:flex;flex-direction:column;}
-  header{background:var(--panel);border-bottom:1px solid var(--edge);padding:.9rem 1.1rem;}
-  header h1{font-size:1.15rem;font-weight:600;}
-  header .flame{display:inline-block;width:10px;height:13px;margin-right:.4rem;vertical-align:-1px;
-       background:radial-gradient(ellipse at 50% 65%,var(--amber),#b9762a 70%,transparent 72%);
-       border-radius:50% 50% 50% 50%/40% 40% 60% 60%;filter:drop-shadow(0 0 5px rgba(232,162,61,.6));}
-  header p{font-size:.74rem;color:var(--dim);margin-top:.2rem;}
-  #layout{display:flex;flex:1;overflow:hidden;}
-  #sidebar{width:290px;background:var(--panel);border-right:1px solid var(--edge);
-       display:flex;flex-direction:column;overflow:hidden;}
-  #search{margin:.8rem;padding:.6rem .7rem;font-size:1rem;font-family:inherit;
-       background:var(--vellum);color:var(--ink);border:1px solid #b9762a;border-radius:2px;outline:none;}
-  #list{overflow-y:auto;padding:0 .5rem 1rem;}
-  .group{font-size:.62rem;letter-spacing:.18em;text-transform:uppercase;color:var(--amber);
-       padding:.9rem .6rem .3rem;font-family:ui-sans-serif,system-ui,sans-serif;}
-  a.doc{display:block;padding:.5rem .6rem;color:var(--text);text-decoration:none;
-       border-radius:2px;font-size:.92rem;line-height:1.25;}
-  a.doc:hover{background:#241f17;}
-  a.doc .kb{color:var(--dim);font-size:.7rem;font-family:ui-monospace,monospace;}
-  a.doc.hidden{display:none;}
-  .group.hidden{display:none;}
-  #viewer{flex:1;overflow-y:auto;padding:1.6rem;background:#100f0c;}
-  #content{max-width:46rem;margin:0 auto;}
-  #content pre{white-space:pre-wrap;word-break:break-word;font-family:ui-monospace,Menlo,monospace;
-       font-size:.84rem;line-height:1.65;background:var(--vellum);color:var(--ink);
-       padding:1.4rem;border-radius:3px;border:1px solid #c4b89c;}
-  .hint{color:var(--dim);font-style:italic;text-align:center;margin-top:3rem;}
-  @media(max-width:768px){
-    #layout{flex-direction:column;}
-    #sidebar{width:auto;max-height:46vh;border-right:none;border-bottom:1px solid var(--edge);}
-    #viewer{padding:1rem;}
-  }
+       color:var(--text);line-height:1.5;-webkit-font-smoothing:antialiased;}
+  .wrap{max-width:54rem;margin:0 auto;padding:0 1.1rem;}
+  a{color:inherit;}
+  .flame{display:inline-block;width:12px;height:16px;vertical-align:-2px;margin-right:.45rem;
+    background:radial-gradient(ellipse at 50% 65%,var(--amber),var(--amber2) 70%,transparent 72%);
+    border-radius:50% 50% 50% 50%/40% 40% 60% 60%;filter:drop-shadow(0 0 6px rgba(232,162,61,.55));}
+  .eyebrow{font-size:.66rem;letter-spacing:.22em;text-transform:uppercase;color:var(--amber);
+    font-family:ui-sans-serif,system-ui,sans-serif;}
+
+  /* Lobby */
+  header.lobby{padding:2.6rem 0 1.4rem;border-bottom:1px solid var(--edge);}
+  header.lobby h1{font-size:2.4rem;font-weight:600;line-height:1.02;margin-top:.5rem;}
+  header.lobby p.sub{color:var(--dim);margin-top:.5rem;font-size:1.02rem;}
+
+  .start{margin:1.8rem 0 1rem;}
+  a.startbtn{display:inline-block;background:var(--amber);color:var(--bg);font-weight:700;
+    font-family:ui-sans-serif,system-ui,sans-serif;font-size:.82rem;letter-spacing:.08em;
+    text-transform:uppercase;text-decoration:none;padding:.85rem 1.3rem;border-radius:2px;}
+  a.startbtn:active{background:var(--amber2);}
+
+  .doors{display:grid;grid-template-columns:1fr 1fr;gap:.7rem;margin:1.2rem 0 2rem;}
+  a.door{display:block;background:var(--panel);border:1px solid var(--edge);border-radius:3px;
+    padding:.9rem 1rem;text-decoration:none;}
+  a.door:active{background:var(--panel2);}
+  a.door .t{font-weight:600;font-size:1.02rem;}
+  a.door .d{color:var(--dim);font-size:.82rem;margin-top:.15rem;}
+
+  h2.section{font-size:.72rem;letter-spacing:.18em;text-transform:uppercase;color:var(--amber);
+    font-family:ui-sans-serif,system-ui,sans-serif;margin:2rem 0 .3rem;padding-top:1.4rem;
+    border-top:1px solid var(--edge);}
+
+  /* Rooms list */
+  .rooms{display:flex;flex-direction:column;gap:.5rem;margin:.8rem 0;}
+  .room{background:var(--panel);border:1px solid var(--edge);border-radius:3px;padding:.8rem 1rem;}
+  .room .rt{font-weight:600;}
+  .room .rd{color:var(--dim);font-size:.85rem;margin-top:.1rem;}
+  .room a{color:var(--amber);text-decoration:none;font-size:.82rem;
+    font-family:ui-monospace,monospace;}
+
+  /* File browser with search */
+  #search{width:100%;margin:.6rem 0;padding:.7rem .8rem;font-size:1rem;font-family:inherit;
+    background:var(--vellum);color:var(--ink);border:1px solid var(--amber2);border-radius:2px;outline:none;}
+  #filelist{display:flex;flex-direction:column;gap:.2rem;}
+  #filelist a{display:flex;justify-content:space-between;padding:.5rem .6rem;text-decoration:none;
+    color:var(--text);border-radius:2px;font-size:.92rem;}
+  #filelist a:active{background:var(--panel2);}
+  #filelist a .kb{color:var(--dim);font-size:.72rem;font-family:ui-monospace,monospace;}
+  #filelist a.hidden,.grouphdr.hidden{display:none;}
+  .grouphdr{font-size:.62rem;letter-spacing:.16em;text-transform:uppercase;color:var(--dim);
+    padding:.7rem .6rem .2rem;font-family:ui-sans-serif,system-ui,sans-serif;}
+
+  /* Viewer overlay */
+  #viewer{display:none;position:fixed;inset:0;background:var(--bg);z-index:50;flex-direction:column;}
+  #viewer.open{display:flex;}
+  #vbar{background:var(--panel);border-bottom:1px solid var(--edge);padding:.7rem 1.1rem;
+    display:flex;align-items:center;gap:1rem;}
+  #vbar button{background:var(--amber);color:var(--bg);border:none;font-weight:700;
+    padding:.4rem .8rem;border-radius:2px;font-family:ui-sans-serif,system-ui,sans-serif;
+    font-size:.74rem;letter-spacing:.06em;text-transform:uppercase;cursor:pointer;}
+  #vpath{font-family:ui-monospace,monospace;font-size:.72rem;color:var(--dim);overflow:hidden;
+    text-overflow:ellipsis;white-space:nowrap;}
+  #vbody{flex:1;overflow-y:auto;padding:1.3rem;}
+  #vbody pre{white-space:pre-wrap;word-break:break-word;font-family:ui-monospace,Menlo,monospace;
+    font-size:.82rem;line-height:1.7;background:var(--vellum);color:var(--ink);padding:1.3rem;
+    border-radius:3px;max-width:48rem;margin:0 auto;}
+
+  footer{color:var(--dim);font-size:.78rem;padding:2.5rem 0 3rem;text-align:center;font-style:italic;}
+  @media(max-width:560px){ .doors{grid-template-columns:1fr;} header.lobby h1{font-size:2rem;} }
 </style>
 </head>
 <body>
-  <header>
-    <h1><span class="flame"></span>Tree of Life — Context Portal</h1>
-    <p>The working archive. Transparent by design — every file is raw and inspectable.</p>
+<div class="wrap">
+
+  <!-- THE LOBBY -->
+  <header class="lobby">
+    <span class="eyebrow"><span class="flame"></span>The Organisatiom</span>
+    <h1>Tree of Life</h1>
+    <p class="sub">A shared workspace for human + multi-AI collaboration.
+      Not an archive. Not a manifesto. A place where work happens.</p>
+    <div class="start">
+      <a class="startbtn" href="#workbench" onclick="openFile('rooms/workbench.md','The Workbench');return false;">
+        Start Here → The Workbench</a>
+    </div>
   </header>
-  <div id="layout">
-    <aside id="sidebar">
-      <input id="search" type="search" placeholder="Search files…"
-             aria-label="Search files" autocomplete="off" />
-      <nav id="list"></nav>
-    </aside>
-    <main id="viewer">
-      <div id="content"><p class="hint">Select a file to inspect the raw context. Use search to filter.</p></div>
-    </main>
+
+  <!-- FOUR DOORS -->
+  <div class="doors">
+    <a class="door" href="#" onclick="openFile('rooms/trailhead.md','Trailhead');return false;">
+      <div class="t">New here?</div><div class="d">Read the Trailhead — 90 seconds.</div></a>
+    <a class="door" href="#" onclick="openFile('rooms/workbench.md','The Workbench');return false;">
+      <div class="t">Ready to work?</div><div class="d">Open the Workbench — orientation + tools.</div></a>
+    <a class="door" href="#browse" onclick="document.getElementById('browse').scrollIntoView();return false;">
+      <div class="t">Looking for something?</div><div class="d">Browse the full index.</div></a>
+    <a class="door" href="#" onclick="openFile('llms.txt','llms.txt — AI instructions');return false;">
+      <div class="t">An AI arriving?</div><div class="d">Read llms.txt first.</div></a>
   </div>
 
+  <!-- ROOMS -->
+  <h2 class="section">The Rooms</h2>
+  <p style="color:var(--dim);font-size:.88rem;margin-bottom:.4rem;">
+    The workspace is organized as rooms, not a file dump. Each has one job.</p>
+  <div class="rooms" id="rooms"></div>
+
+  <!-- BROWSE / SEARCH -->
+  <h2 class="section" id="browse">Browse Everything</h2>
+  <p style="color:var(--dim);font-size:.88rem;">
+    Search filters the list as you type. (You can't read 50,000 files in three
+    seconds — this is the human's tool.)</p>
+  <input id="search" type="search" placeholder="Search files…" aria-label="Search files" autocomplete="off" />
+  <div id="filelist"></div>
+
+  <footer>
+    Transparent by design — every file is raw and inspectable.<br>
+    Reality gets a vote. Correction is normal. The site is the proof, not the bait.
+  </footer>
+</div>
+
+<!-- VIEWER -->
+<div id="viewer">
+  <div id="vbar">
+    <button onclick="closeViewer()">← Back</button>
+    <span id="vpath"></span>
+  </div>
+  <div id="vbody"><pre id="vpre"></pre></div>
+</div>
+
 <script>
-// Data-driven: the whole portal reads from manifest.json. Add a file there
-// (one line) and it appears here — no HTML editing needed.
-const GROUPS = [
-  ["Orient", "root"],
-  ["The Five Tools", "artifacts"],
-  ["The Archive — conversations", "conversations"],
-];
+function esc(s){return s.replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;");}
 
-function esc(s){ return s.replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;"); }
-
-function loadDoc(path, name){
-  const c = document.getElementById("content");
-  c.innerHTML = '<p class="hint">Opening "+ '+JSON.stringify(name)+' …</p>';
-  fetch(path).then(r=>{ if(!r.ok) throw new Error(); return r.text(); })
-    .then(t=>{ c.innerHTML = "<pre>"+esc(t)+"</pre>"; document.getElementById("viewer").scrollTop=0; })
-    .catch(()=>{ c.innerHTML = '<p class="hint">Could not open this file.</p>'; });
+function openFile(path,name){
+  const v=document.getElementById("viewer"), pre=document.getElementById("vpre");
+  document.getElementById("vpath").textContent=path;
+  pre.textContent="Opening "+name+" …";
+  v.classList.add("open"); document.getElementById("vbody").scrollTop=0;
+  fetch(path).then(r=>{if(!r.ok)throw new Error();return r.text();})
+    .then(t=>{pre.textContent=t;})
+    .catch(()=>{pre.textContent="Could not open this file. It may not be in the archive yet — an honest gap, not a hidden one.";});
 }
+function closeViewer(){document.getElementById("viewer").classList.remove("open");}
 
-function build(manifest){
-  const list = document.getElementById("list");
-  list.innerHTML = "";
+const ROOMS=[
+  ["The Workbench","Current state, tools, orientation. The working room.","rooms/workbench.md"],
+  ["The Trailhead","90-second onboarding for any new human or AI.","rooms/trailhead.md"],
+  ["Reality Check","The blunt, current state. What's known, what's uncertain.","rooms/reality-check.md"],
+  ["The Library","Stable, high-value reference: Corpus Map, Lantern Ledger, Calibration Notes.","context/00_INDEX.md"],
+  ["The Museum","Preserved artifacts and visuals. Exhibits, not working files.","rooms/museum.md"],
+  ["The Living Forest","Active threads and ongoing work. Changes often.","context/conversations/"],
+  ["The Holding Shelf","Unresolved but potentially valuable. Low pressure.","rooms/holding-shelf.md"],
+  ["Archaeology","Old versions, fossils, what didn't survive — kept with receipts.","rooms/archaeology.md"],
+];
+const rd=document.getElementById("rooms");
+ROOMS.forEach(([t,d,path])=>{
+  const el=document.createElement("div"); el.className="room";
+  el.innerHTML='<div class="rt">'+esc(t)+'</div><div class="rd">'+esc(d)+'</div>';
+  const a=document.createElement("a"); a.href="#"; a.textContent="open ↗";
+  a.onclick=(e)=>{e.preventDefault();openFile(path,t);};
+  el.appendChild(a); rd.appendChild(el);
+});
+
+// File browser from manifest
+const GROUPS=[["Orient","root"],["The Library — core docs","artifacts"],["The Archive — conversations","conversations"]];
+fetch("manifest.json").then(r=>r.json()).then(m=>{
+  const list=document.getElementById("filelist");
   GROUPS.forEach(([label,key])=>{
-    const items = manifest[key] || [];
-    if(!items.length) return;
-    const h = document.createElement("div");
-    h.className = "group"; h.textContent = label; h.dataset.group = key;
-    list.appendChild(h);
+    const items=m[key]||[]; if(!items.length)return;
+    const h=document.createElement("div"); h.className="grouphdr"; h.textContent=label; list.appendChild(h);
     items.forEach(it=>{
-      const a = document.createElement("a");
-      a.className = "doc"; a.href = "#";
-      a.dataset.name = it.name.toLowerCase();
-      a.innerHTML = esc(it.name) + ' <span class="kb">'+it.kb+'k</span>';
-      a.onclick = (e)=>{ e.preventDefault(); loadDoc(it.file, it.name); };
+      const a=document.createElement("a"); a.href="#"; a.dataset.name=it.name.toLowerCase();
+      a.innerHTML='<span>'+esc(it.name)+'</span><span class="kb">'+it.kb+'k</span>';
+      a.onclick=(e)=>{e.preventDefault();openFile(it.file,it.name);};
       list.appendChild(a);
     });
   });
-}
+}).catch(()=>{document.getElementById("filelist").innerHTML='<p style="color:var(--dim)">manifest.json not found</p>';});
 
-// Search: filters the file list live. (Humans can't read 50k files in 3s — this
-// is the human's tool. AI can read everything; the person needs the filter.)
-document.getElementById("search").addEventListener("input", e=>{
-  const q = e.target.value.trim().toLowerCase();
-  document.querySelectorAll("a.doc").forEach(a=>{
-    a.classList.toggle("hidden", q && !a.dataset.name.includes(q));
-  });
-  // hide a group header if all its items are hidden
-  document.querySelectorAll(".group").forEach(h=>{
-    let n = h.nextElementSibling, anyVisible=false;
-    while(n && n.classList.contains("doc")){ if(!n.classList.contains("hidden")) anyVisible=true; n=n.nextElementSibling; }
-    h.classList.toggle("hidden", q && !anyVisible);
+document.getElementById("search").addEventListener("input",e=>{
+  const q=e.target.value.trim().toLowerCase();
+  document.querySelectorAll("#filelist a").forEach(a=>a.classList.toggle("hidden",q&&!a.dataset.name.includes(q)));
+  document.querySelectorAll(".grouphdr").forEach(h=>{
+    let n=h.nextElementSibling,vis=false;
+    while(n&&n.tagName==="A"){if(!n.classList.contains("hidden"))vis=true;n=n.nextElementSibling;}
+    h.classList.toggle("hidden",q&&!vis);
   });
 });
-
-fetch("manifest.json").then(r=>r.json()).then(build)
-  .catch(()=>{ document.getElementById("list").innerHTML = '<p class="hint">manifest.json not found</p>'; });
 </script>
 </body>
 </html>

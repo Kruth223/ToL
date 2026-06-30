@@ -1,93 +1,57 @@
 {
-  "artifacts": [
-    {
-      "file": "context/artifacts/The_Archive_Architecture.txt",
-      "name": "The Archive Architecture",
-      "kb": 10
-    },
-    {
-      "file": "context/artifacts/The_Lantern_Ledger.txt",
-      "name": "The Lantern Ledger",
-      "kb": 10
-    },
-    {
-      "file": "context/artifacts/The_Workbench_v2.txt",
-      "name": "The Workbench v2",
-      "kb": 5
-    }
-  ],
-  "conversations": [
-    {
-      "file": "context/conversations/ai_as_cognitive_tool.md",
-      "name": "ai as cognitive tool",
-      "kb": 51
-    },
-    {
-      "file": "context/conversations/cairn.md",
-      "name": "cairn",
-      "kb": 402
-    },
-    {
-      "file": "context/conversations/continuity_test_insights.md",
-      "name": "continuity test insights",
-      "kb": 33
-    },
-    {
-      "file": "context/conversations/feedback_on_project_files.md",
-      "name": "feedback on project files",
-      "kb": 18
-    },
-    {
-      "file": "context/conversations/lumen.md",
-      "name": "lumen",
-      "kb": 4452
-    },
-    {
-      "file": "context/conversations/lumen_2_0.md",
-      "name": "lumen 2 0",
-      "kb": 57
-    },
-    {
-      "file": "context/conversations/luna.md",
-      "name": "luna",
-      "kb": 3235
-    },
-    {
-      "file": "context/conversations/morrow.md",
-      "name": "morrow",
-      "kb": 2233
-    },
-    {
-      "file": "context/conversations/read_subtitle_file.md",
-      "name": "read subtitle file",
-      "kb": 3
-    },
-    {
-      "file": "context/conversations/super_saiyan.md",
-      "name": "super saiyan",
-      "kb": 241
-    },
-    {
-      "file": "context/conversations/testing_project_continuity.md",
-      "name": "testing project continuity",
-      "kb": 4
-    },
-    {
-      "file": "context/conversations/veyra_soma.md",
-      "name": "veyra soma",
-      "kb": 1916
-    }
-  ],
   "root": [
+    {
+      "file": "llms.txt",
+      "name": "llms.txt \u2014 AI instructions",
+      "kb": 2
+    },
     {
       "file": "context/00_INDEX.md",
       "name": "00 INDEX \u2014 read me first",
       "kb": 1
     },
     {
-      "file": "llms.txt",
-      "name": "llms.txt \u2014 AI instructions",
+      "file": "rooms/archaeology.md",
+      "name": "Archaeology",
+      "kb": 1
+    },
+    {
+      "file": "rooms/holding-shelf.md",
+      "name": "Holding Shelf",
+      "kb": 1
+    },
+    {
+      "file": "rooms/museum.md",
+      "name": "Museum",
+      "kb": 1
+    },
+    {
+      "file": "rooms/reality-check.md",
+      "name": "Reality Check",
       "kb": 2
+    },
+    {
+      "file": "rooms/trailhead.md",
+      "name": "Trailhead",
+      "kb": 1
+    },
+    {
+      "file": "rooms/workbench.md",
+      "name": "Workbench",
+      "kb": 3
     }
-  ]
+  ],
+  "artifacts": [
+    {
+      "file": "context/artifacts/Emotional_Calibration_Notes.txt",
+      "name": "Emotional Calibration Notes",
+      "kb": 14
+    },
+    {
+      "file": "context/artifacts/Human_AI_Discoveries_Archive.md",
+      "name": "Human AI Discoveries Archive",
+      "kb": 3
+    }
+  ],
+  "conversations": []
 }
