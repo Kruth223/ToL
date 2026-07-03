@@ -149,6 +149,7 @@ const SLICE=250000; // ~250 KB per slice keeps phones alive
 let vState=null;
 
 function openFile(path,name){
+  if(path.endsWith(".html")){location.href=path;return;}
   const v=document.getElementById("viewer"), pre=document.getElementById("vpre");
   document.getElementById("vpath").textContent=path;
   pre.textContent="Opening "+name+" …";
@@ -183,7 +184,7 @@ const ROOMS=[
   ["The Trailhead","90-second onboarding for any new human or AI.","rooms/trailhead.md"],
   ["Reality Check","The blunt, current state. What's known, what's uncertain.","rooms/reality-check.md"],
   ["The Library","Stable, high-value reference: Corpus Map, Lantern Ledger, Calibration Notes.","context/00_INDEX.md"],
-  ["The Museum","Preserved artifacts and visuals. Exhibits, not working files.","rooms/museum.md"],
+  ["The Museum","Preserved artifacts and visuals. The gallery.","museum.html"],
   ["The Living Forest","Active threads and ongoing work. Changes often.","rooms/living-forest.md"],
   ["The Holding Shelf","Unresolved but potentially valuable. Low pressure.","rooms/holding-shelf.md"],
   ["Archaeology","Old versions, fossils, what didn't survive — kept with receipts.","rooms/archaeology.md"],

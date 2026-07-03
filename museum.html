@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>The Museum — Tree of Life</title>
+<meta name="description" content="Preserved visuals from the Organisatiom. Nothing here is rare. Some exhibits are still alive." />
+<style>
+  :root{ --bg:#141310; --panel:#1c1a16; --panel2:#231f17; --edge:#332f26;
+         --text:#e9e2d0; --dim:#9b927e; --amber:#e8a23d; --amber2:#b9762a;
+         --vellum:#f3ead6; --ink:#2a2620; }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{font-family:"Iowan Old Style",Palatino,Georgia,serif;background:var(--bg);
+       color:var(--text);line-height:1.5;-webkit-font-smoothing:antialiased;}
+  .wrap{max-width:60rem;margin:0 auto;padding:0 1.1rem;}
+  a{color:inherit;}
+  .eyebrow{font-size:.66rem;letter-spacing:.22em;text-transform:uppercase;color:var(--amber);
+    font-family:ui-sans-serif,system-ui,sans-serif;}
+  header{padding:2.2rem 0 1.2rem;border-bottom:1px solid var(--edge);}
+  header h1{font-size:2.1rem;font-weight:600;line-height:1.05;margin-top:.45rem;}
+  header p.sub{color:var(--dim);margin-top:.5rem;font-size:.98rem;font-style:italic;}
+  a.back{display:inline-block;margin:1rem 0 0;color:var(--amber);text-decoration:none;
+    font-family:ui-sans-serif,system-ui,sans-serif;font-size:.78rem;letter-spacing:.08em;
+    text-transform:uppercase;font-weight:700;}
+
+  .note{background:var(--panel);border:1px solid var(--edge);border-radius:3px;
+    padding:1rem 1.1rem;margin:1.3rem 0;color:var(--dim);font-size:.9rem;}
+  .note b{color:var(--text);}
+
+  #grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));
+    gap:.6rem;margin:1.4rem 0 3rem;}
+  .cell{background:var(--panel);border:1px solid var(--edge);border-radius:3px;
+    overflow:hidden;cursor:pointer;}
+  .cell img{display:block;width:100%;aspect-ratio:1;object-fit:cover;background:var(--panel2);}
+  .cell .cap{padding:.4rem .55rem;font-size:.72rem;color:var(--dim);
+    white-space:nowrap;overflow:hidden;text-overflow:ellipsis;
+    font-family:ui-sans-serif,system-ui,sans-serif;}
+
+  /* Exhibit overlay */
+  #ex{display:none;position:fixed;inset:0;background:rgba(12,11,9,.97);z-index:50;
+    flex-direction:column;}
+  #ex.open{display:flex;}
+  #exbar{padding:.7rem 1.1rem;display:flex;align-items:center;gap:1rem;
+    background:var(--panel);border-bottom:1px solid var(--edge);}
+  #exbar button{background:var(--amber);color:var(--bg);border:none;font-weight:700;
+    padding:.4rem .8rem;border-radius:2px;font-family:ui-sans-serif,system-ui,sans-serif;
+    font-size:.74rem;letter-spacing:.06em;text-transform:uppercase;cursor:pointer;}
+  #extitle{font-size:.82rem;color:var(--dim);overflow:hidden;text-overflow:ellipsis;
+    white-space:nowrap;font-family:ui-monospace,monospace;}
+  #exbody{flex:1;overflow:auto;display:flex;align-items:center;justify-content:center;padding:1rem;}
+  #exbody img{max-width:100%;max-height:100%;object-fit:contain;}
+  #exnote{padding:.8rem 1.1rem;background:var(--panel);border-top:1px solid var(--edge);
+    color:var(--text);font-size:.9rem;font-style:italic;text-align:center;}
+  #exnote:empty{display:none;}
+
+  footer{color:var(--dim);font-size:.78rem;padding:1.5rem 0 3rem;text-align:center;font-style:italic;}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <span class="eyebrow">The Organisatiom · Tree of Life</span>
+    <h1>The Museum</h1>
+    <p class="sub">Nothing in this museum is rare. Most of it was almost thrown away.
+      Some exhibits are only here because someone looked twice.
+      Please scroll quietly — some of the exhibits are still alive.</p>
+    <a class="back" href="index.html">← Back to the Lobby</a>
+  </header>
+
+  <div class="note" id="empty" style="display:none;">
+    <b>No exhibits yet.</b> The museum walls are up but the crates haven't arrived.
+    Images go in <b>images/museum/</b> and get listed in <b>images/manifest.json</b>
+    — one line each. An honest gap, not a hidden one.
+  </div>
+
+  <div id="grid"></div>
+
+  <footer>
+    If an exhibit becomes more impressive than ordinary life, remove the exhibit.<br>
+    Wonder rarely arrives wearing a costume. Most days, it borrows Tuesday.
+  </footer>
+</div>
+
+<div id="ex">
+  <div id="exbar">
+    <button onclick="closeEx()">← Back</button>
+    <span id="extitle"></span>
+  </div>
+  <div id="exbody"><img id="eximg" alt="" /></div>
+  <div id="exnote"></div>
+</div>
+
+<script>
+function esc(s){return String(s).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;");}
+let EXHIBITS=[];
+
+function openEx(i){
+  const e=EXHIBITS[i];
+  document.getElementById("eximg").src="images/museum/"+e.file;
+  document.getElementById("eximg").alt=e.title||e.file;
+  document.getElementById("extitle").textContent=e.title||e.file;
+  document.getElementById("exnote").textContent=e.note||"";
+  document.getElementById("ex").classList.add("open");
+}
+function closeEx(){document.getElementById("ex").classList.remove("open");}
+
+fetch("images/manifest.json").then(r=>{if(!r.ok)throw new Error();return r.json();})
+.then(list=>{
+  EXHIBITS=list;
+  if(!list.length){document.getElementById("empty").style.display="block";return;}
+  const g=document.getElementById("grid");
+  list.forEach((e,i)=>{
+    const c=document.createElement("div"); c.className="cell";
+    const img=document.createElement("img");
+    img.src="images/museum/"+e.file; img.loading="lazy"; img.decoding="async";
+    img.alt=e.title||e.file;
+    const cap=document.createElement("div"); cap.className="cap";
+    cap.textContent=e.title||e.file;
+    c.appendChild(img); c.appendChild(cap);
+    c.onclick=()=>openEx(i);
+    g.appendChild(c);
+  });
+})
+.catch(()=>{document.getElementById("empty").style.display="block";});
+</script>
+</body>
+</html>

@@ -1,22 +1,25 @@
-# The Museum
+# THE MUSEUM
+Preserved visuals. Exhibits, not working files.
 
-Preserved artifacts worth keeping but not actively editing — treated like
-exhibits, not working files. Important images, key visuals, milestone documents.
+The gallery is live at museum.html — a lazy-loading wall of everything
+the project kept: generated art, field photos, the disco ball that
+started it all, and the Museum of Ordinary Miracles collection.
 
-## Status
-The museum is the next real build. The project has 139 images that currently
-live only on a phone — they are not yet curated or backed into the site. They
-need a human pass to sort project-art-that-is-public-safe from personal photos,
-because images can't be auto-scrubbed the way text can.
+## Why this room exists
+For weeks the ~139 museum images lived only on one phone. One dropped
+phone, one failed backup, and the whole visual record was gone. This
+room is the fix: every image committed to the repo is preserved,
+versioned, and served — no longer a single point of failure.
 
-## What will belong here
-- Project art and generated visuals that are safe to show publicly.
-- Milestone screenshots — the record of the build itself.
-- Key diagrams and visual artifacts that earned a place.
+## How exhibits arrive
+1. Images go in images/museum/ (upload via Codespace or GitHub web).
+2. Run the one-line manifest generator (see images/museum/README.txt).
+3. Commit and push. The wall updates itself.
 
-## What will not
-- Personal photos (family, home, real life).
-- Anything with identifying information that hasn't had a human's eyes on it.
+Titles and notes are optional and can be added later in
+images/manifest.json. An exhibit with no title shows its filename
+until it earns one — honest gaps, not hidden ones.
 
-The museum is the feeling part of the site. The porch is text; this is the part
-that makes it human. It's worth building carefully, which is why it's not rushed.
+## The standing rule
+If an exhibit becomes more impressive than ordinary life,
+remove the exhibit.
