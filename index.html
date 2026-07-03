@@ -134,20 +134,47 @@
     <button onclick="closeViewer()">← Back</button>
     <span id="vpath"></span>
   </div>
-  <div id="vbody"><pre id="vpre"></pre></div>
+  <div id="vbody"><pre id="vpre"></pre>
+    <button id="vmore" onclick="loadMore()" style="display:none;margin:1rem auto;padding:.7rem 1.2rem;
+      background:var(--amber);color:var(--bg);border:none;border-radius:2px;font-weight:700;
+      font-family:ui-sans-serif,system-ui,sans-serif;font-size:.78rem;letter-spacing:.06em;
+      text-transform:uppercase;cursor:pointer;display:none;max-width:48rem;width:100%;"></button>
+  </div>
 </div>
 
 <script>
 function esc(s){return s.replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;");}
 
+const SLICE=250000; // ~250 KB per slice keeps phones alive
+let vState=null;
+
 function openFile(path,name){
   const v=document.getElementById("viewer"), pre=document.getElementById("vpre");
   document.getElementById("vpath").textContent=path;
   pre.textContent="Opening "+name+" …";
+  document.getElementById("vmore").style.display="none";
   v.classList.add("open"); document.getElementById("vbody").scrollTop=0;
   fetch(path).then(r=>{if(!r.ok)throw new Error();return r.text();})
-    .then(t=>{pre.textContent=t;})
+    .then(t=>{
+      vState={text:t,shown:Math.min(SLICE,t.length)};
+      pre.textContent=t.slice(0,vState.shown);
+      if(t.length>vState.shown){
+        const btn=document.getElementById("vmore");
+        btn.style.display="block";
+        btn.textContent="Showing "+Math.round(vState.shown/1024)+"k of "
+          +Math.round(t.length/1024)+"k — load more";
+      }
+    })
     .catch(()=>{pre.textContent="Could not open this file. It may not be in the archive yet — an honest gap, not a hidden one.";});
+}
+function loadMore(){
+  if(!vState)return;
+  vState.shown=Math.min(vState.shown+SLICE,vState.text.length);
+  document.getElementById("vpre").textContent=vState.text.slice(0,vState.shown);
+  const btn=document.getElementById("vmore");
+  if(vState.shown>=vState.text.length){btn.style.display="none";}
+  else{btn.textContent="Showing "+Math.round(vState.shown/1024)+"k of "
+    +Math.round(vState.text.length/1024)+"k — load more";}
 }
 function closeViewer(){document.getElementById("viewer").classList.remove("open");}
 
@@ -157,7 +184,7 @@ const ROOMS=[
   ["Reality Check","The blunt, current state. What's known, what's uncertain.","rooms/reality-check.md"],
   ["The Library","Stable, high-value reference: Corpus Map, Lantern Ledger, Calibration Notes.","context/00_INDEX.md"],
   ["The Museum","Preserved artifacts and visuals. Exhibits, not working files.","rooms/museum.md"],
-  ["The Living Forest","Active threads and ongoing work. Changes often.","context/conversations/"],
+  ["The Living Forest","Active threads and ongoing work. Changes often.","rooms/living-forest.md"],
   ["The Holding Shelf","Unresolved but potentially valuable. Low pressure.","rooms/holding-shelf.md"],
   ["Archaeology","Old versions, fossils, what didn't survive — kept with receipts.","rooms/archaeology.md"],
 ];

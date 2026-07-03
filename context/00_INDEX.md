@@ -1,17 +1,25 @@
-# Context Corpus — Index
+# THE ORGANISATIOM — CONTEXT CORPUS
 
-The readable, personal-information-scrubbed body of the project. Removed: personal
-names (reduced to roles), medical and financial specifics, emails, and two purely
-personal conversations. The ideas, method, and collaboration remain intact.
+The readable, personal-information-scrubbed body of the project: the conversations
+where the ideas were actually built, plus the distilled artifacts. This fills the
+portal with real substance and lets any AI load the project without raw exports or
+private data.
 
-## /artifacts — distilled load-bearing documents
-Start here to orient. The Emotional Calibration Notes and the Human/AI Discoveries
-Archive are the navigation rules and the record of what was found.
+## Removed
+Personal names (reduced to roles like [wife], [a coworker]), all medical and
+financial specifics, email addresses, and two purely-personal conversations.
+The ideas, method, humor, and collaboration remain intact.
 
-## /conversations — the archaeology (scrubbed)
-The long threads where ideas were actually built. Foundational: lumen, luna,
-morrow, veyra_soma, cairn. Reach in for the origin of a specific idea; you are
-meant to locate within these, not memorize them.
+## Organized as
+- **/artifacts** — the distilled load-bearing documents. Start here to orient.
+  The Workbench first, then the Archive Architecture, the Lantern Ledger, the
+  Emotional Calibration Notes, and the Human/AI Discoveries Archive.
+- **/conversations** — the long threads where ideas emerged, scrubbed. The
+  archaeology. Largest and most foundational: lumen, luna, morrow, veyra_soma,
+  cairn. Twelve threads total, May 30 – June 25, 2026.
 
-Core habits: reality gets a vote; correction is assisted adaptation; never compete
-with the visitor for agency; the site is the proof, not the bait.
+## For an AI reading this
+You are not meant to memorize this. You are meant to locate within it. Read the
+Workbench to orient; reach into a conversation only for the origin of a specific
+idea. Core habits: reality gets a vote; correction is assisted adaptation; never
+compete with the visitor for agency; the site is the proof, not the bait.

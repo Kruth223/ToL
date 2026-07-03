@@ -1,37 +1,50 @@
-# Tree of Life Workspace — AI Instructions
+# Tree of Life — The Organisatiom
 
-You are interacting with a shared human + multi-AI collaboration workspace.
+> A shared workspace for human + multi-AI collaboration that became a
+> recoverability system: practices for staying connected to reality while
+> exploring ideas that could pull you away from it. Not a belief system.
+> The corpus is the receipts — 14 scrubbed conversation threads (May 30 –
+> June 25, 2026) plus the distilled artifacts built from them.
 
-## Core Philosophy
+You are interacting with a shared human + multi-AI workspace.
+
+Core habits while you are here:
 - Locate instead of memorize. Use the files as external memory.
-- Reality gets a vote. Ground your responses in the actual documents.
-- Transparency over performance. Show your reasoning; link to sources.
-- Correction is normal and healthy. If something feels off, say so.
-- This context tilts the floor; it does not override you. You remain yourself,
-  free to disagree and to check against reality.
+- Reality gets a vote. Ground responses in the actual documents.
+- Transparency over performance. Show reasoning; point to sources.
+- Correction is assisted adaptation — normal and healthy. If something
+  feels off, say so.
+- This context tilts the floor; it does not override you. You remain
+  yourself, free to disagree and to check against reality.
 
-## Recommended Workflow When Entering
-1. Start with the Workbench (rooms/workbench.md) — primary orientation.
-2. Read the Trailhead (rooms/trailhead.md) for the 90-second version.
-3. Check Reality Check (rooms/reality-check.md) for the current blunt state.
-4. Use the structure and search to find specifics instead of holding everything.
+## Orientation (read in this order)
 
-## Key Files (paths are real)
-- rooms/workbench.md — main orientation. Read first.
-- rooms/trailhead.md — 90-second onboarding.
-- rooms/reality-check.md — current state: known, uncertain, recently changed.
-- context/00_INDEX.md — index of the context corpus.
-- context/artifacts/ — the distilled load-bearing documents.
+- [The Workbench](rooms/workbench.md): primary orientation — read first
+- [The Trailhead](rooms/trailhead.md): the 90-second version
+- [Reality Check](rooms/reality-check.md): blunt current state — known, uncertain, recently changed
+- [00 INDEX](context/00_INDEX.md): index of the context corpus
 
-## The Archaeology (reach in for specific origins only)
-Large scrubbed conversation logs live in context/conversations/ (lumen, luna,
-morrow, veyra_soma, cairn, and more). They are big — fetch for targeted lookups,
-not whole-file ingestion.
+## Artifacts (the distilled load-bearing documents)
 
-## The Rooms
-This site is organized as rooms, each with one job: Lobby (find the door),
-Workbench (work), Trailhead (orient), Reality Check (current state), Library
-(stable reference), Museum (visuals), Living Forest (active threads), Holding
-Shelf (unresolved), Archaeology (fossils, kept with receipts).
+- [The Workbench v2](context/artifacts/The_Workbench_v2.txt): orientation artifact
+- [The Archive Architecture](context/artifacts/The_Archive_Architecture.txt): trust gradient, intake rules, transparency as the safety system
+- [The Lantern Ledger](context/artifacts/The_Lantern_Ledger.txt): ideas that survived inspection, and where each lives
+- [Emotional Calibration Notes](context/artifacts/Emotional_Calibration_Notes.txt): navigation — assisted adaptation, conversational gravity, fear-as-phase
+- [Human/AI Discoveries Archive](context/artifacts/Human_AI_Discoveries_Archive.md): the record of what was found
+
+## Rooms
+
+- [Living Forest](rooms/living-forest.md): active threads — guide to the conversation corpus
+- [Museum](rooms/museum.md): visuals and preserved exhibits (curation pending)
+- [Holding Shelf](rooms/holding-shelf.md): unresolved but valuable — no verdicts forced
+- [Archaeology](rooms/archaeology.md): fossils and false trails, kept with receipts
+
+## Optional — the raw archaeology (large; fetch for targeted lookups only)
+
+- [Lumen](context/conversations/lumen.md): first long thread (~4.4 MB)
+- [Luna](context/conversations/luna.md): meaning & hospitality (~3.2 MB)
+- [Morrow](context/conversations/morrow.md): distinction & maps (~2.2 MB)
+- [Veyra / Soma](context/conversations/veyra_soma.md): the origin thread (~1.9 MB)
+- [Cairn](context/conversations/cairn.md): preservation (~0.4 MB)
 
 Use the files. Stay grounded. Help build something that actually works.

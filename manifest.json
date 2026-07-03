@@ -2,43 +2,48 @@
   "root": [
     {
       "file": "llms.txt",
-      "name": "llms.txt \u2014 AI instructions",
-      "kb": 2
+      "name": "llms.txt — AI front door",
+      "kb": 3
     },
     {
       "file": "context/00_INDEX.md",
-      "name": "00 INDEX \u2014 read me first",
-      "kb": 1
-    },
-    {
-      "file": "rooms/archaeology.md",
-      "name": "Archaeology",
-      "kb": 1
-    },
-    {
-      "file": "rooms/holding-shelf.md",
-      "name": "Holding Shelf",
-      "kb": 1
-    },
-    {
-      "file": "rooms/museum.md",
-      "name": "Museum",
-      "kb": 1
-    },
-    {
-      "file": "rooms/reality-check.md",
-      "name": "Reality Check",
-      "kb": 2
-    },
-    {
-      "file": "rooms/trailhead.md",
-      "name": "Trailhead",
+      "name": "00 INDEX — read me first",
       "kb": 1
     },
     {
       "file": "rooms/workbench.md",
-      "name": "Workbench",
+      "name": "Workbench — start here",
       "kb": 3
+    },
+    {
+      "file": "rooms/trailhead.md",
+      "name": "Trailhead — 90-second onboarding",
+      "kb": 1
+    },
+    {
+      "file": "rooms/reality-check.md",
+      "name": "Reality Check — blunt current state",
+      "kb": 2
+    },
+    {
+      "file": "rooms/living-forest.md",
+      "name": "Living Forest — active threads",
+      "kb": 1
+    },
+    {
+      "file": "rooms/museum.md",
+      "name": "Museum — visuals (curation pending)",
+      "kb": 1
+    },
+    {
+      "file": "rooms/holding-shelf.md",
+      "name": "Holding Shelf — unresolved, valuable",
+      "kb": 1
+    },
+    {
+      "file": "rooms/archaeology.md",
+      "name": "Archaeology — fossils, kept with receipts",
+      "kb": 1
     }
   ],
   "artifacts": [
@@ -49,9 +54,85 @@
     },
     {
       "file": "context/artifacts/Human_AI_Discoveries_Archive.md",
-      "name": "Human AI Discoveries Archive",
+      "name": "Human/AI Discoveries Archive",
       "kb": 3
+    },
+    {
+      "file": "context/artifacts/The_Archive_Architecture.txt",
+      "name": "The Archive Architecture — trust gradient & rules",
+      "kb": 10
+    },
+    {
+      "file": "context/artifacts/The_Lantern_Ledger.txt",
+      "name": "The Lantern Ledger — ideas that earned a lantern",
+      "kb": 10
+    },
+    {
+      "file": "context/artifacts/The_Workbench_v2.txt",
+      "name": "The Workbench v2 — orientation (artifact copy)",
+      "kb": 5
     }
   ],
-  "conversations": []
+  "conversations": [
+    {
+      "file": "context/conversations/lumen.md",
+      "name": "Lumen — the first long thread (May 31–Jun 18)",
+      "kb": 4452
+    },
+    {
+      "file": "context/conversations/luna.md",
+      "name": "Luna — meaning & hospitality (Jun 6–25)",
+      "kb": 3235
+    },
+    {
+      "file": "context/conversations/morrow.md",
+      "name": "Morrow — distinction & maps (Jun 7–25)",
+      "kb": 2233
+    },
+    {
+      "file": "context/conversations/veyra_soma.md",
+      "name": "Veyra / Soma — the origin thread (May 30–Jun 25)",
+      "kb": 1916
+    },
+    {
+      "file": "context/conversations/cairn.md",
+      "name": "Cairn — preservation (Jun 15–25)",
+      "kb": 402
+    },
+    {
+      "file": "context/conversations/super_saiyan.md",
+      "name": "Super Saiyan (Jun 17–24)",
+      "kb": 241
+    },
+    {
+      "file": "context/conversations/lumen_2_0.md",
+      "name": "Lumen 2.0 (Jun 17–20)",
+      "kb": 57
+    },
+    {
+      "file": "context/conversations/ai_as_cognitive_tool.md",
+      "name": "AI as Cognitive Tool (Jun 17–20)",
+      "kb": 51
+    },
+    {
+      "file": "context/conversations/continuity_test_insights.md",
+      "name": "Continuity Test Insights (Jun 15–20)",
+      "kb": 33
+    },
+    {
+      "file": "context/conversations/feedback_on_project_files.md",
+      "name": "Feedback on Project Files (Jun 21)",
+      "kb": 18
+    },
+    {
+      "file": "context/conversations/testing_project_continuity.md",
+      "name": "Testing Project Continuity (Jun 15)",
+      "kb": 4
+    },
+    {
+      "file": "context/conversations/read_subtitle_file.md",
+      "name": "Read Subtitle File (Jun 25)",
+      "kb": 3
+    }
+  ]
 }

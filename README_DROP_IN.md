@@ -1,60 +1,37 @@
-# TREE OF LIFE — Lobby + Rooms Build (drop-in for GitHub Pages)
+# TREE OF LIFE — Complete Site (one-shot full deploy)
 
-This is the new front-end built from the Cid's Outline + Grok's Build: a lobby
-homepage with the Workbench as the front door, room-based navigation, a working
-search bar, and the supporting room files. Plain static files. Built for GitHub
-Pages, NOT Vercel.
+This is the WHOLE site in one package: Cid's lobby + rooms structure MERGED
+with the full scrubbed conversation corpus from the portal build. No more
+version soup — this replaces everything at the repo root.
 
-## IMPORTANT — how this merges with what's already live
+Built by Fable, July 1 2026, from the two half-builds (lobby June 30 +
+portal June 29). Structure from one, content from the other, plus fixes.
 
-Your site already has `context/conversations/` (the scrubbed corpus) deployed.
-This build does NOT include those (they're large and already on the server). It
-adds the STRUCTURE around them. When you drop this in:
+## What changed from the two previous builds
+- MERGED: all 12 scrubbed conversation logs + all 5 artifacts now in one tree
+- manifest.json regenerated against the real file list with real sizes —
+  every file shows in the browser and search
+- llms.txt upgraded to the proper llms.txt convention (H1 + blockquote
+  summary + sectioned links) while keeping the gravity line and core habits
+- NEW room: rooms/living-forest.md (the old link pointed at a bare
+  directory, which GitHub Pages 404s)
+- Viewer now loads big files in 250 KB slices with a "load more" button —
+  opening the 4.4 MB Lumen log no longer freezes a phone
+- 00_INDEX.md updated to cover all five artifacts
 
-- KEEP your existing `context/conversations/` folder as-is.
-- This adds: `index.html` (new lobby), `rooms/`, `llms.txt`, `manifest.json`,
-  `context/00_INDEX.md`, and `context/artifacts/`.
-- After merging, edit `manifest.json` to re-list your conversation files under
-  "conversations" so they show in the browser (one line each — or ask Cid to
-  regenerate the manifest against the live file list).
+## Deploy (full replacement)
+1. In the ToL repo, delete the old index.html, llms.txt, manifest.json,
+   rooms/ and context/ (or just replace on upload — same result).
+2. Upload the contents of this zip to the repo ROOT (GitHub web uploader
+   unpacks folders; StackBlitz also works). ~13 MB total.
+3. Commit to main. Pages republishes in about a minute.
+4. Test on your phone: lobby loads → Start Here opens Workbench → search
+   "luna" → open the Luna log → "load more" appears. If all four work,
+   the front door is real.
 
-## What's here
+## Still honest gaps (on purpose)
+- Museum room says curation pending — the ~139 images are still phone-only.
+  That is the next single point of failure to close.
+- The Vercel porch (Lantern Ledger) is separate and untouched by this.
 
-```
-index.html              the new LOBBY homepage — Workbench front and center,
-                        four doors, room navigation, search bar, file viewer
-llms.txt                corrected AI instructions (real paths + gravity line)
-manifest.json           drives the file browser (add a file = one line)
-rooms/
-  workbench.md          the Start Here target — orientation + tools + mementos
-  trailhead.md          90-second onboarding
-  reality-check.md      blunt current state: known / uncertain / changed
-  museum.md             the visuals room (curation pending)
-  holding-shelf.md      unresolved-but-valuable ideas
-  archaeology.md        fossils and false trails, kept with receipts
-context/
-  00_INDEX.md           index of the context corpus
-  artifacts/            distilled load-bearing docs (text)
-```
-
-## Deploy (one import, no folder-building)
-
-1. Drop these files into the ToL repo root, keeping your existing
-   `context/conversations/` intact. (StackBlitz or GitHub desktop-site uploader
-   unpacks the folders for you — one import.)
-2. Commit to main. GitHub Pages republishes in ~1 minute.
-3. Settings → Pages → confirm Source is the branch/folder you committed to.
-
-## What the lobby does
-- Big "Start Here → The Workbench" button (the front door, as designed).
-- Four doors: New here / Ready to work / Looking for something / AI arriving.
-- Room navigation — each room opens its file in an overlay viewer.
-- Search bar that filters the file list live (the human's tool — an AI can read
-  everything; a person needs the filter).
-- Properly-escaped viewer (no broken rendering on big files).
-
-## If a room file says "could not open"
-That room's .md just isn't in the repo yet — an honest gap, not a hidden one.
-Add the file and it works. Nothing pretends to be more built than it is.
-
-— Cid · lobby + rooms build · from the Outline + Grok's Build · structural overlay
+Reality gets a vote. The site is the proof, not the bait.
