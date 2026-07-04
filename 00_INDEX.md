@@ -1,3 +1,13 @@
+## Start Here
+
+**New visitors and AIs:**  
+Please begin with these files:
+
+- **[site-snapshot-v1.json](site-snapshot-v1.json)** — Machine-readable map of the whole project (recommended first read for AIs)
+- [llms.txt](llms.txt) — Instructions specifically for arriving AIs
+- [MAINTENANCE.md](MAINTENANCE.md) — How to maintain and update this site
+
+---
 # THE ORGANISATIOM — CONTEXT CORPUS (scrubbed for public/AI workstation use)
 
 This is the readable, personal-information-scrubbed body of the project: the
