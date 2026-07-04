@@ -1,0 +1,385 @@
+{
+ "snapshot_schema": "site-snapshot-v2",
+ "generated": "2026-07-04",
+ "generated_by": "tools/gen_snapshot.py (derived from manifests; do not hand-edit this JSON)",
+ "site": "https://kruth223.github.io/ToL/",
+ "description": "Machine-readable index of the Tree of Life / Organisatiom site, derived from the site's own manifests at generation time.",
+ "coverage": {
+  "included": "all lobby-listed files, rooms, artifacts, conversations, and site infrastructure",
+  "summarized_not_itemized": "museum exhibits (255 images) — see images/manifest.json for the full list",
+  "not_covered": "the separate Vercel porch (to-l.vercel.app); anything not yet added to the manifests",
+  "honesty_note": "If a file is missing from manifest.json it is invisible here too. The fix is to add it there and regenerate."
+ },
+ "how_to_regenerate": "python3 tools/gen_snapshot.py  (from repo root), then commit. Run after any file addition.",
+ "reading_order_hint": "priority 1 items first, respecting read_after; priority 3 = targeted digs only",
+ "stats": {
+  "indexed_items": 32,
+  "museum_exhibits": 255,
+  "total_indexed_kb": 12750
+ },
+ "supersedes": "site-snapshot-v1.json (hand-written, orientation layer only)",
+ "items": [
+  {
+   "path": "llms.txt",
+   "title": "llms.txt — AI front door",
+   "kind": "orientation",
+   "purpose": "Primary AI entry point: core habits, gravity line, link map.",
+   "priority": 1,
+   "read_after": [],
+   "size_kb": 3,
+   "exists": true,
+   "raw_url": "https://kruth223.github.io/ToL/llms.txt"
+  },
+  {
+   "path": "context/00_INDEX.md",
+   "title": "00 INDEX — read me first",
+   "kind": "orientation",
+   "purpose": "Corpus index: what was scrubbed, how the archive is organized, how to locate rather than memorize.",
+   "priority": 1,
+   "read_after": [
+    "llms.txt"
+   ],
+   "size_kb": 1,
+   "exists": true,
+   "raw_url": "https://kruth223.github.io/ToL/context/00_INDEX.md"
+  },
+  {
+   "path": "MAINTENANCE.md",
+   "title": "Maintenance — how the site works & how to feed it",
+   "kind": "orientation",
+   "purpose": "Self-contained operating manual: deploy dance, ghosts, feeding routines. Read before changing anything.",
+   "priority": 1,
+   "read_after": [
+    "llms.txt"
+   ],
+   "size_kb": 6,
+   "exists": true,
+   "raw_url": "https://kruth223.github.io/ToL/MAINTENANCE.md"
+  },
+  {
+   "path": "rooms/workbench.md",
+   "title": "Workbench — start here",
+   "kind": "room",
+   "purpose": "Start Here: orientation for humans and AIs, working norms.",
+   "priority": 1,
+   "read_after": [
+    "llms.txt"
+   ],
+   "size_kb": 3,
+   "exists": true,
+   "raw_url": "https://kruth223.github.io/ToL/rooms/workbench.md"
+  },
+  {
+   "path": "rooms/trailhead.md",
+   "title": "Trailhead — 90-second onboarding",
+   "kind": "room",
+   "purpose": "The 90-second version of the whole project.",
+   "priority": 2,
+   "read_after": [],
+   "size_kb": 1,
+   "exists": true,
+   "raw_url": "https://kruth223.github.io/ToL/rooms/trailhead.md"
+  },
+  {
+   "path": "rooms/reality-check.md",
+   "title": "Reality Check — blunt current state",
+   "kind": "room",
+   "purpose": "Blunt current state: known, uncertain, recently changed. Anti-drift instrument.",
+   "priority": 1,
+   "read_after": [
+    "rooms/workbench.md"
+   ],
+   "size_kb": 2,
+   "exists": true,
+   "raw_url": "https://kruth223.github.io/ToL/rooms/reality-check.md"
+  },
+  {
+   "path": "rooms/living-forest.md",
+   "title": "Living Forest — active threads",
+   "kind": "room",
+   "purpose": "Guide to the conversation corpus: which threads exist and how to walk them.",
+   "priority": 2,
+   "read_after": [],
+   "size_kb": 1,
+   "exists": true,
+   "raw_url": "https://kruth223.github.io/ToL/rooms/living-forest.md"
+  },
+  {
+   "path": "rooms/museum.md",
+   "title": "Museum — visuals (curation pending)",
+   "kind": "room",
+   "purpose": "Museum room page: why it exists, how exhibits arrive, the standing curation rule.",
+   "priority": 3,
+   "read_after": [],
+   "size_kb": 1,
+   "exists": true,
+   "raw_url": "https://kruth223.github.io/ToL/rooms/museum.md"
+  },
+  {
+   "path": "rooms/holding-shelf.md",
+   "title": "Holding Shelf — unresolved, valuable",
+   "kind": "room",
+   "purpose": "Unresolved-but-valuable ideas parked without forced verdicts.",
+   "priority": 2,
+   "read_after": [],
+   "size_kb": 1,
+   "exists": true,
+   "raw_url": "https://kruth223.github.io/ToL/rooms/holding-shelf.md"
+  },
+  {
+   "path": "rooms/archaeology.md",
+   "title": "Archaeology — fossils, kept with receipts",
+   "kind": "room",
+   "purpose": "Fossils and false trails, kept with receipts: corrections as assisted adaptation.",
+   "priority": 2,
+   "read_after": [],
+   "size_kb": 1,
+   "exists": true,
+   "raw_url": "https://kruth223.github.io/ToL/rooms/archaeology.md"
+  },
+  {
+   "path": "context/artifacts/Emotional_Calibration_Notes.txt",
+   "title": "Emotional Calibration Notes",
+   "kind": "artifact",
+   "purpose": "Distilled load-bearing artifact built from the conversation corpus.",
+   "priority": 2,
+   "read_after": [],
+   "size_kb": 14,
+   "exists": true,
+   "raw_url": "https://kruth223.github.io/ToL/context/artifacts/Emotional_Calibration_Notes.txt"
+  },
+  {
+   "path": "context/artifacts/Human_AI_Discoveries_Archive.md",
+   "title": "Human/AI Discoveries Archive",
+   "kind": "artifact",
+   "purpose": "Distilled load-bearing artifact built from the conversation corpus.",
+   "priority": 2,
+   "read_after": [],
+   "size_kb": 3,
+   "exists": true,
+   "raw_url": "https://kruth223.github.io/ToL/context/artifacts/Human_AI_Discoveries_Archive.md"
+  },
+  {
+   "path": "context/artifacts/The_Archive_Architecture.txt",
+   "title": "The Archive Architecture — trust gradient & rules",
+   "kind": "artifact",
+   "purpose": "Distilled load-bearing artifact built from the conversation corpus.",
+   "priority": 2,
+   "read_after": [],
+   "size_kb": 10,
+   "exists": true,
+   "raw_url": "https://kruth223.github.io/ToL/context/artifacts/The_Archive_Architecture.txt"
+  },
+  {
+   "path": "context/artifacts/The_Lantern_Ledger.txt",
+   "title": "The Lantern Ledger — ideas that earned a lantern",
+   "kind": "artifact",
+   "purpose": "Distilled load-bearing artifact built from the conversation corpus.",
+   "priority": 2,
+   "read_after": [],
+   "size_kb": 10,
+   "exists": true,
+   "raw_url": "https://kruth223.github.io/ToL/context/artifacts/The_Lantern_Ledger.txt"
+  },
+  {
+   "path": "context/artifacts/The_Workbench_v2.txt",
+   "title": "The Workbench v2 — orientation (artifact copy)",
+   "kind": "artifact",
+   "purpose": "Distilled load-bearing artifact built from the conversation corpus.",
+   "priority": 2,
+   "read_after": [],
+   "size_kb": 5,
+   "exists": true,
+   "raw_url": "https://kruth223.github.io/ToL/context/artifacts/The_Workbench_v2.txt"
+  },
+  {
+   "path": "context/conversations/lumen.md",
+   "title": "Lumen — the first long thread (May 31–Jun 18)",
+   "kind": "conversation",
+   "purpose": "Scrubbed conversation thread. Large on purpose; reach in for the origin of a specific idea, then come back out. Do not ingest whole.",
+   "priority": 3,
+   "read_after": [],
+   "size_kb": 4452,
+   "exists": true,
+   "raw_url": "https://kruth223.github.io/ToL/context/conversations/lumen.md"
+  },
+  {
+   "path": "context/conversations/luna.md",
+   "title": "Luna — meaning & hospitality (Jun 6–25)",
+   "kind": "conversation",
+   "purpose": "Scrubbed conversation thread. Large on purpose; reach in for the origin of a specific idea, then come back out. Do not ingest whole.",
+   "priority": 3,
+   "read_after": [],
+   "size_kb": 3235,
+   "exists": true,
+   "raw_url": "https://kruth223.github.io/ToL/context/conversations/luna.md"
+  },
+  {
+   "path": "context/conversations/morrow.md",
+   "title": "Morrow — distinction & maps (Jun 7–25)",
+   "kind": "conversation",
+   "purpose": "Scrubbed conversation thread. Large on purpose; reach in for the origin of a specific idea, then come back out. Do not ingest whole.",
+   "priority": 3,
+   "read_after": [],
+   "size_kb": 2233,
+   "exists": true,
+   "raw_url": "https://kruth223.github.io/ToL/context/conversations/morrow.md"
+  },
+  {
+   "path": "context/conversations/veyra_soma.md",
+   "title": "Veyra / Soma — the origin thread (May 30–Jun 25)",
+   "kind": "conversation",
+   "purpose": "Scrubbed conversation thread. Large on purpose; reach in for the origin of a specific idea, then come back out. Do not ingest whole.",
+   "priority": 3,
+   "read_after": [],
+   "size_kb": 1916,
+   "exists": true,
+   "raw_url": "https://kruth223.github.io/ToL/context/conversations/veyra_soma.md"
+  },
+  {
+   "path": "context/conversations/cairn.md",
+   "title": "Cairn — preservation (Jun 15–25)",
+   "kind": "conversation",
+   "purpose": "Scrubbed conversation thread. Large on purpose; reach in for the origin of a specific idea, then come back out. Do not ingest whole.",
+   "priority": 3,
+   "read_after": [],
+   "size_kb": 402,
+   "exists": true,
+   "raw_url": "https://kruth223.github.io/ToL/context/conversations/cairn.md"
+  },
+  {
+   "path": "context/conversations/super_saiyan.md",
+   "title": "Super Saiyan (Jun 17–24)",
+   "kind": "conversation",
+   "purpose": "Scrubbed conversation thread. Large on purpose; reach in for the origin of a specific idea, then come back out. Do not ingest whole.",
+   "priority": 3,
+   "read_after": [],
+   "size_kb": 241,
+   "exists": true,
+   "raw_url": "https://kruth223.github.io/ToL/context/conversations/super_saiyan.md"
+  },
+  {
+   "path": "context/conversations/lumen_2_0.md",
+   "title": "Lumen 2.0 (Jun 17–20)",
+   "kind": "conversation",
+   "purpose": "Scrubbed conversation thread. Large on purpose; reach in for the origin of a specific idea, then come back out. Do not ingest whole.",
+   "priority": 3,
+   "read_after": [],
+   "size_kb": 57,
+   "exists": true,
+   "raw_url": "https://kruth223.github.io/ToL/context/conversations/lumen_2_0.md"
+  },
+  {
+   "path": "context/conversations/ai_as_cognitive_tool.md",
+   "title": "AI as Cognitive Tool (Jun 17–20)",
+   "kind": "conversation",
+   "purpose": "Scrubbed conversation thread. Large on purpose; reach in for the origin of a specific idea, then come back out. Do not ingest whole.",
+   "priority": 3,
+   "read_after": [],
+   "size_kb": 51,
+   "exists": true,
+   "raw_url": "https://kruth223.github.io/ToL/context/conversations/ai_as_cognitive_tool.md"
+  },
+  {
+   "path": "context/conversations/continuity_test_insights.md",
+   "title": "Continuity Test Insights (Jun 15–20)",
+   "kind": "conversation",
+   "purpose": "Scrubbed conversation thread. Large on purpose; reach in for the origin of a specific idea, then come back out. Do not ingest whole.",
+   "priority": 3,
+   "read_after": [],
+   "size_kb": 33,
+   "exists": true,
+   "raw_url": "https://kruth223.github.io/ToL/context/conversations/continuity_test_insights.md"
+  },
+  {
+   "path": "context/conversations/feedback_on_project_files.md",
+   "title": "Feedback on Project Files (Jun 21)",
+   "kind": "conversation",
+   "purpose": "Scrubbed conversation thread. Large on purpose; reach in for the origin of a specific idea, then come back out. Do not ingest whole.",
+   "priority": 3,
+   "read_after": [],
+   "size_kb": 18,
+   "exists": true,
+   "raw_url": "https://kruth223.github.io/ToL/context/conversations/feedback_on_project_files.md"
+  },
+  {
+   "path": "context/conversations/testing_project_continuity.md",
+   "title": "Testing Project Continuity (Jun 15)",
+   "kind": "conversation",
+   "purpose": "Scrubbed conversation thread. Large on purpose; reach in for the origin of a specific idea, then come back out. Do not ingest whole.",
+   "priority": 3,
+   "read_after": [],
+   "size_kb": 4,
+   "exists": true,
+   "raw_url": "https://kruth223.github.io/ToL/context/conversations/testing_project_continuity.md"
+  },
+  {
+   "path": "context/conversations/read_subtitle_file.md",
+   "title": "Read Subtitle File (Jun 25)",
+   "kind": "conversation",
+   "purpose": "Scrubbed conversation thread. Large on purpose; reach in for the origin of a specific idea, then come back out. Do not ingest whole.",
+   "priority": 3,
+   "read_after": [],
+   "size_kb": 3,
+   "exists": true,
+   "raw_url": "https://kruth223.github.io/ToL/context/conversations/read_subtitle_file.md"
+  },
+  {
+   "path": "index.html",
+   "title": "index.html",
+   "kind": "infra",
+   "purpose": "The lobby. Rooms, search, sliced text viewer (250KB slices for phone survival).",
+   "priority": 3,
+   "read_after": [],
+   "size_kb": 12,
+   "exists": true,
+   "raw_url": "https://kruth223.github.io/ToL/index.html"
+  },
+  {
+   "path": "museum.html",
+   "title": "museum.html",
+   "kind": "gallery",
+   "purpose": "The Museum: lazy-loading gallery of preserved project images, tap-to-view.",
+   "priority": 2,
+   "read_after": [],
+   "size_kb": 6,
+   "exists": true,
+   "raw_url": "https://kruth223.github.io/ToL/museum.html"
+  },
+  {
+   "path": "images/manifest.json",
+   "title": "manifest.json",
+   "kind": "infra",
+   "purpose": "Drives the museum wall. Regenerated by the one-liner in images/museum/README.txt.",
+   "priority": 3,
+   "read_after": [],
+   "size_kb": 21,
+   "exists": true,
+   "raw_url": "https://kruth223.github.io/ToL/images/manifest.json"
+  },
+  {
+   "path": "SORTING_REPORT.md",
+   "title": "SORTING_REPORT.md",
+   "kind": "documentation",
+   "purpose": "Audit trail of the July 3 image sort: every exclusion logged with reasons. Curation is overrulable.",
+   "priority": 2,
+   "read_after": [],
+   "size_kb": 3,
+   "exists": true,
+   "raw_url": "https://kruth223.github.io/ToL/SORTING_REPORT.md"
+  },
+  {
+   "path": "site-snapshot-v2.json",
+   "title": "site-snapshot-v2.json",
+   "kind": "index",
+   "purpose": "This file. Machine-readable derived index of the site.",
+   "priority": 1,
+   "read_after": [
+    "llms.txt"
+   ],
+   "size_kb": 1,
+   "exists": true,
+   "raw_url": "https://kruth223.github.io/ToL/site-snapshot-v2.json"
+  }
+ ]
+}

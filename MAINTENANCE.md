@@ -39,6 +39,8 @@ now structurally impossible *unless someone reintroduces tooling.*
     images/manifest.json    what the museum displays (exhibits)
     images/museum/          255 images + README.txt (the generator)
     SORTING_REPORT.md       what was kept/excluded from the crates & why
+    site-snapshot-v2.json   machine-readable derived index (do not hand-edit)
+    tools/gen_snapshot.py   regenerates the snapshot from the manifests
 
 Two manifests, two jobs: root `manifest.json` = lobby contents;
 `images/manifest.json` = museum wall. Don't confuse them.
@@ -70,6 +72,15 @@ Actions tab for the "pages build and deployment" run.
    in `images/museum/README.txt`; it scans the folder and rewrites
    `images/manifest.json`).
 3. add / commit / push.
+
+After ANY file addition (museum, corpus, rooms), also regenerate the
+machine index so it can't drift:
+
+    python3 tools/gen_snapshot.py
+
+The snapshot is derived, never hand-edited. If it disagrees with
+reality, regenerate it; if regeneration disagrees with reality, the
+manifests are wrong — fix those.
 
 Titles and notes are optional: edit `images/manifest.json`, fill the
 empty `"title"` / `"note"` fields. An exhibit shows its filename until
