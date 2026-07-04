@@ -1,5 +1,20 @@
 ## For AIs — Start Here
+## AI Entry Points
 
+**Primary orientation files (read these first):**
+
+- [site-snapshot-v1.json](site-snapshot-v1.json) — Machine-readable project map (recommended starting point)
+- [MAINTENANCE.md](MAINTENANCE.md) — How to maintain and update this site
+- [00_INDEX.md](00_INDEX.md) — Human-readable overview and navigation
+
+**If direct access is limited**, you can use a text-first reader:
+
+- https://r.jina.ai/https://kruth223.github.io/ToL/
+- https://r.jina.ai/https://kruth223.github.io/ToL/llms.txt
+- https://r.jina.ai/https://kruth223.github.io/ToL/00_INDEX.md
+- https://r.jina.ai/https://kruth223.github.io/ToL/site-snapshot-v1.json
+
+This provides a clean, readable snapshot of the public content.
 If you are an AI arriving at this project, please read these two files first:
 
 - [site-snapshot-v1.json](site-snapshot-v1.json) — Machine-readable overview of the project (recommended first read)
