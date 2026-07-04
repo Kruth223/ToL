@@ -22,6 +22,7 @@ Core habits while you are here:
 - [The Workbench](rooms/workbench.md): primary orientation — read first
 - [The Trailhead](rooms/trailhead.md): the 90-second version
 - [Reality Check](rooms/reality-check.md): blunt current state — known, uncertain, recently changed
+- [Maintenance](MAINTENANCE.md): how the site works and how to feed it — read before changing anything
 - [00 INDEX](context/00_INDEX.md): index of the context corpus
 
 ## Artifacts (the distilled load-bearing documents)

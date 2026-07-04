@@ -11,6 +11,11 @@
       "kb": 1
     },
     {
+      "file": "MAINTENANCE.md",
+      "name": "Maintenance — how the site works & how to feed it",
+      "kb": 6
+    },
+    {
       "file": "rooms/workbench.md",
       "name": "Workbench — start here",
       "kb": 3
