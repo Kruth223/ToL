@@ -15,7 +15,7 @@
  "stats": {
   "indexed_items": 32,
   "museum_exhibits": 255,
-  "total_indexed_kb": 12750
+  "total_indexed_kb": 12765
  },
  "supersedes": "site-snapshot-v1.json (hand-written, orientation layer only)",
  "items": [
@@ -26,7 +26,7 @@
    "purpose": "Primary AI entry point: core habits, gravity line, link map.",
    "priority": 1,
    "read_after": [],
-   "size_kb": 3,
+   "size_kb": 4,
    "exists": true,
    "raw_url": "https://kruth223.github.io/ToL/llms.txt"
   },
@@ -52,7 +52,7 @@
    "read_after": [
     "llms.txt"
    ],
-   "size_kb": 6,
+   "size_kb": 7,
    "exists": true,
    "raw_url": "https://kruth223.github.io/ToL/MAINTENANCE.md"
   },
@@ -106,7 +106,7 @@
   },
   {
    "path": "rooms/museum.md",
-   "title": "Museum — visuals (curation pending)",
+   "title": "Museum — 255 exhibits",
    "kind": "room",
    "purpose": "Museum room page: why it exists, how exhibits arrive, the standing curation rule.",
    "priority": 3,
@@ -377,7 +377,7 @@
    "read_after": [
     "llms.txt"
    ],
-   "size_kb": 1,
+   "size_kb": 14,
    "exists": true,
    "raw_url": "https://kruth223.github.io/ToL/site-snapshot-v2.json"
   }
