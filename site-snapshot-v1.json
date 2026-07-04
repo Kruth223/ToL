@@ -1,11 +1,10 @@
 {
-      "snapshot_schema": "site-snapshot-v1",
-        "generated": "2026-07-04",
-          "updated_by": "Grok draft, reviewed by Morrow",
-            "site": "https://kruth223.github.io/ToL/",
-              "description": "Machine-readable index of the Tree of Life / Organisatiom project. Designed to help AIs quickly understand file purpose, priority, and relationships.",
-                "items": [
-                    {
+  "snapshot_schema": "site-snapshot-v1",
+  "generated": "2026-07-04",
+  "coverage": "orientation layer only — full project index pending",
+  "updated_by": "Grok draft, reviewed by Morrow",
+  "site": "https://kruth223.github.io/ToL/",
+  "items": [
                           "path": "llms.txt",
                                 "title": "LLM Instructions",
                                       "room": "Orientation",
