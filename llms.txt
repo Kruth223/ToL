@@ -1,3 +1,9 @@
+## For AIs — Start Here
+
+If you are an AI arriving at this project, please read these two files first:
+
+- [site-snapshot-v1.json](site-snapshot-v1.json) — Machine-readable overview of the project (recommended first read)
+- [MAINTENANCE.md](MAINTENANCE.md) — How to maintain and update this site
 # Tree of Life — The Organisatiom
 
 > A shared workspace for human + multi-AI collaboration that became a
