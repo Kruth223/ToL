@@ -1,0 +1,182 @@
+THE INSPECTABILITY FRAMEWORK
+A working plan for inspectable power, held open for reality's vote
+Distilled July–September 2026; public compression November 17, 2026
+Sources: Independent AI Auditing & Inspectability Framework for
+High-Power Institutions; Transparency Transition Framework;
+The Foundation Layer; The Architecture of Control.
+Status: OPEN — on the Holding Shelf, not canon.
+
+Core principle
+Default inspectability, not default trust.
+
+Institutions with significant unilateral power should not get to
+begin the conversation at "trust us." Opacity is the exception. It
+must be narrow, time-bound, specifically justified, and subject to
+automatic sunset. Permanent "operational security" is structural
+capture wearing a badge.
+
+The system should make power structurally harder to abuse, reduce
+reliance on good intentions, and make correction easier. The
+auditing mechanism itself must be resistant to capture. Good purpose
+raises the inspection standard; it does not lower it. There is no
+mission-statement immunity.
+
+The danger is not in the tool. Technology does not have an agenda
+of its own. The danger is in the hands that deploy it — architects,
+corporations, governing bodies — when authority is unchecked and
+motives are opaque. Centralized power plus opaque motives produces
+public rebellion. That is a pattern, not a conspiracy theory.
+
+The useful pivot
+Do not try to build an incorruptible auditor. Build a record that
+is cheap to preserve and expensive to erase.
+
+Capture is not only a structure problem. It is a power-gradient
+problem. Rotation, logging, external boards, and multi-model
+development are walls. Walls get tunneled under by whoever has the
+most time, money, and patience — which is often the party being
+audited. You cannot out-architect a power asymmetry. You can change
+what the asymmetry costs.
+
+The frameworks that actually constrain powerful institutions do not
+rely on a trusted watcher. They rely on making the truth hard to
+quietly alter: copies in more than one place, marks that no single
+party can erase, suppression that would require a conspiracy too
+large to hold. The question is not "who audits the auditor?" —
+that regresses forever. The question is "how do we make
+institutional actions leave marks that no single party can erase?"
+That question terminates.
+
+Structural mechanisms
+1. Dual-track plus rotation
+   Work splits into a public track and a restricted track. People
+   rotate on mixed schedules, some of it random. The point is to
+   prevent insulated knowledge silos from becoming permanent
+   fiefdoms.
+
+2. AI as notary, not judge
+   Invert the default. The job is not to decide what matters and
+   surface it when a flag trips. The job is to commit a
+   tamper-evident record — a public fingerprint, distributed copies
+   — so that existence is provable even when content stays sealed
+   for a justified interval. Judgment stays human and plural. The
+   machine guarantees the receipts survive. It also needs its own
+   inspection layer, because a notary can be corrupted too.
+
+3. Multi-model development
+   Build the recording and auditing layer across competing models
+   and companies, under public scrutiny. No single vendor, agency,
+   or government should control the lens.
+
+4. Adversarial plurality
+   Replace a single "trusted oversight board" with mutually hostile
+   verifiers who have standing to publish: journalists, academics,
+   competing agencies, opposing political actors, rival firms. You
+   do not need them to be pure. You need their interests to diverge
+   enough that suppressing all of them at once is too expensive
+   to hold.
+
+5. Automatic sunset
+   Restricted status expires by default (a working figure used in
+   the draft: 90 days) and requires active, on-the-record
+   re-justification. Without this, the restricted track expands
+   until "operational security" is a permanent escape hatch.
+
+6. Accountability triggers
+   - Measurable external harm caused by clear process failure
+     carries personal liability for the responsible leadership tier.
+   - Repeated refusal of independent verification is itself a
+     high-visibility signal: it should lower legitimacy and can
+     trigger loss of funding or authority.
+   - "It's complicated" requires specific, reviewable justification.
+     Blanket claims expire.
+
+7. Parallel independent capacity
+   Outside labs, academic consortia, and other independent groups
+   should be able to produce competing data on high-impact claims.
+   Unilateral analytical claims get weaker when parallel
+   verification exists.
+
+The excuses, and why they fail
+"Active investigation requires secrecy."
+  Real investigations end. Used as a permanent shield, the claim
+  fails. Restricted status auto-expires and must be re-justified
+  on the record.
+
+"Privacy means no transparency."
+  This conflates public authority with private life. Private
+  medical privacy stays. Public officials' self-dealing does not.
+
+"Trust requires opacity."
+  Trust is the residue of verified behavior over time, not a
+  starting assumption. Inspectability first.
+
+"Mercy requires hiding the offense."
+  That is avoidance, not forgiveness. Repair needs facts that can
+  be inspected. Forgive does not equal forget.
+
+"It's too complex / people aren't ready."
+  This protects power by infantilizing the public. Publish the
+  complexity. If the public cannot follow, the institution failed
+  to explain.
+
+"We need centralized control for safety."
+  Centralized control is one capture away from weaponization.
+  Distribute the record.
+
+"History proves this fails."
+  History proves transitions are messy. It does not prove the
+  direction is wrong. "Never been fully real before" is a reason
+  to keep the idea on the Shelf — OPEN, not a reason to call it
+  false.
+
+"Ego and shame will destroy people."
+  Mistakes become knowledge when inspected, not when hidden.
+  Voluntary transparency is not the same as hostile extraction.
+
+What to hold, and what not to claim
+"Transparency is better, always" is a directional bearing, not an
+empirical prediction. It cannot be proven because it has never
+been fully realized. That is not a weakness. That is why it stays
+on the Shelf.
+
+n=1 is the floor, not the ceiling. That one person, given tools
+and will, can sustain inspection instead of tribal reflex means
+the practice is not impossible and not reserved for elites. It
+does not mean a species is ready. The jump from one to everyone
+is the largest inference in the file, and it rests on the smallest
+possible sample. Do not complete that pattern.
+
+The same warning applies to perfect language: infinite positive,
+zero negative, guaranteed at social scale. That is the shape of an
+idea that feels maximally satisfying right before someone stops
+checking. The honest residual claim is weaker and more interesting:
+the positives can be large, and the negatives manageable, under
+certain conditions.
+
+An idea that explains everything and predicts nothing stays on the
+Shelf not because it is false, but because it is unfalsifiable,
+and unfalsifiable ideas cannot be corrected by evidence. They can
+only be believed or disbelieved. The framework requires something
+better than belief.
+
+The tower was load-bearing once. Outdated is not the same as
+never-needed. Climb down before removing it. Move the load, then
+dismantle.
+
+Open questions, still thin in the drafts
+- Who ultimately sets the rules and priorities for the recording
+  and auditing layer? If the audited party sets them, the system
+  collapses into sophisticated self-audit.
+- How does the restricted track get prevented from quietly
+  expanding even with a sunset rule on paper?
+- Does the framework apply only to state power, or also to large
+  labs, platforms, and other private actors with comparable
+  unilateral power? The logic does not stop at government.
+
+A spec can be tested, broken, and improved. A manifesto demands
+agreement. This is a spec. If it is wrong, the errors will be
+found in practice. If it is right, it will survive contact with
+reality, because reality is the only judge that cannot be captured.
+
+Don't promote it. Defend it. Reality keeps its vote.

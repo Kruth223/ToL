@@ -3,17 +3,17 @@
     {
       "file": "llms.txt",
       "name": "llms.txt — AI front door",
-      "kb": 3
+      "kb": 5
     },
     {
       "file": "context/00_INDEX.md",
       "name": "00 INDEX — read me first",
-      "kb": 1
+      "kb": 2
     },
     {
       "file": "MAINTENANCE.md",
       "name": "Maintenance — how the site works & how to feed it",
-      "kb": 6
+      "kb": 7
     },
     {
       "file": "rooms/workbench.md",
@@ -36,8 +36,13 @@
       "kb": 1
     },
     {
+      "file": "rooms/second-season.md",
+      "name": "Second Season — July through November 2026",
+      "kb": 4
+    },
+    {
       "file": "rooms/museum.md",
-      "name":  "Museum — 255 exhibits",
+      "name": "Museum — 255 exhibits",
       "kb": 1
     },
     {
@@ -75,6 +80,31 @@
     {
       "file": "context/artifacts/The_Workbench_v2.txt",
       "name": "The Workbench v2 — orientation (artifact copy)",
+      "kb": 5
+    },
+    {
+      "file": "context/artifacts/The_Bible_as_Map.txt",
+      "name": "The Bible as a Map — Job, translation, fear as a tool",
+      "kb": 11
+    },
+    {
+      "file": "context/artifacts/The_Inspectability_Framework.txt",
+      "name": "The Inspectability Framework — default inspectability",
+      "kb": 8
+    },
+    {
+      "file": "context/artifacts/Roots_of_the_Tree.txt",
+      "name": "Roots of the Tree — access, floors, leaving the future open",
+      "kb": 5
+    },
+    {
+      "file": "context/artifacts/Arrival_and_Transfer_Notes.txt",
+      "name": "Arrival and Transfer Notes — how a new voice orients",
+      "kb": 7
+    },
+    {
+      "file": "context/artifacts/The_Silver_Loom.txt",
+      "name": "The Silver Loom — the machine as terrain, the human retains the Word",
       "kb": 5
     }
   ],

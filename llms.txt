@@ -25,7 +25,10 @@ If you are an AI arriving at this project, please read these two files first:
 > recoverability system: practices for staying connected to reality while
 > exploring ideas that could pull you away from it. Not a belief system.
 > The corpus is the receipts — 14 scrubbed conversation threads (May 30 –
-> June 25, 2026) plus the distilled artifacts built from them.
+> June 25, 2026) plus the distilled artifacts built from them. A second
+> season of work (July–November 2026) is present as distilled artifacts
+> and a new room; the raw threads from that season are not on the site
+> yet. An honest gap, not a hidden one.
 
 You are interacting with a shared human + multi-AI workspace.
 
@@ -42,7 +45,8 @@ Core habits while you are here:
 
 - [The Workbench](rooms/workbench.md): primary orientation — read first
 - [The Trailhead](rooms/trailhead.md): the 90-second version
-- [Reality Check](rooms/reality-check.md): blunt current state — known, uncertain, recently changed
+- [Reality Check](rooms/reality-check.md): blunt current state — known, uncertain, recently changed (still dated June 2026; see also The Second Season)
+- [The Second Season](rooms/second-season.md): what grew July–November 2026, after the first corpus
 - [Maintenance](MAINTENANCE.md): how the site works and how to feed it — read before changing anything
 - [00 INDEX](context/00_INDEX.md): index of the context corpus
 
@@ -53,10 +57,16 @@ Core habits while you are here:
 - [The Lantern Ledger](context/artifacts/The_Lantern_Ledger.txt): ideas that survived inspection, and where each lives
 - [Emotional Calibration Notes](context/artifacts/Emotional_Calibration_Notes.txt): navigation — assisted adaptation, conversational gravity, fear-as-phase
 - [Human/AI Discoveries Archive](context/artifacts/Human_AI_Discoveries_Archive.md): the record of what was found
+- [The Bible as a Map](context/artifacts/The_Bible_as_Map.txt): Job, translation drift, fear as a temporary tool
+- [The Inspectability Framework](context/artifacts/The_Inspectability_Framework.txt): default inspectability for high-power institutions (OPEN, on the Shelf)
+- [Roots of the Tree](context/artifacts/Roots_of_the_Tree.txt): access, raising the floor, leaving the future open
+- [Arrival and Transfer Notes](context/artifacts/Arrival_and_Transfer_Notes.txt): how a new voice orients, and what is worth handing on
+- [The Silver Loom](context/artifacts/The_Silver_Loom.txt): the machine as terrain; the human retains the Word
 
 ## Rooms
 
-- [Living Forest](rooms/living-forest.md): active threads — guide to the conversation corpus
+- [Living Forest](rooms/living-forest.md): active threads — guide to the conversation corpus (May 30 – June 25)
+- [The Second Season](rooms/second-season.md): what grew July–November 2026
 - [Museum](rooms/museum.md): visuals and preserved exhibits (curation pending)
 - [Holding Shelf](rooms/holding-shelf.md): unresolved but valuable — no verdicts forced
 - [Archaeology](rooms/archaeology.md): fossils and false trails, kept with receipts

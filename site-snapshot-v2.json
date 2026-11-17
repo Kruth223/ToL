@@ -1,6 +1,6 @@
 {
  "snapshot_schema": "site-snapshot-v2",
- "generated": "2026-07-04",
+ "generated": "2026-11-17",
  "generated_by": "tools/gen_snapshot.py (derived from manifests; do not hand-edit this JSON)",
  "site": "https://kruth223.github.io/ToL/",
  "description": "Machine-readable index of the Tree of Life / Organisatiom site, derived from the site's own manifests at generation time.",
@@ -13,9 +13,9 @@
  "how_to_regenerate": "python3 tools/gen_snapshot.py  (from repo root), then commit. Run after any file addition.",
  "reading_order_hint": "priority 1 items first, respecting read_after; priority 3 = targeted digs only",
  "stats": {
-  "indexed_items": 32,
+  "indexed_items": 38,
   "museum_exhibits": 255,
-  "total_indexed_kb": 12765
+  "total_indexed_kb": 12807
  },
  "supersedes": "site-snapshot-v1.json (hand-written, orientation layer only)",
  "items": [
@@ -26,7 +26,7 @@
    "purpose": "Primary AI entry point: core habits, gravity line, link map.",
    "priority": 1,
    "read_after": [],
-   "size_kb": 4,
+   "size_kb": 5,
    "exists": true,
    "raw_url": "https://kruth223.github.io/ToL/llms.txt"
   },
@@ -39,7 +39,7 @@
    "read_after": [
     "llms.txt"
    ],
-   "size_kb": 1,
+   "size_kb": 2,
    "exists": true,
    "raw_url": "https://kruth223.github.io/ToL/context/00_INDEX.md"
   },
@@ -103,6 +103,19 @@
    "size_kb": 1,
    "exists": true,
    "raw_url": "https://kruth223.github.io/ToL/rooms/living-forest.md"
+  },
+  {
+   "path": "rooms/second-season.md",
+   "title": "Second Season — July through November 2026",
+   "kind": "room",
+   "purpose": "What grew July–November 2026 after the first corpus: Bible as map, inspectability, roots, arrival notes, Silver Loom.",
+   "priority": 2,
+   "read_after": [
+    "rooms/workbench.md"
+   ],
+   "size_kb": 4,
+   "exists": true,
+   "raw_url": "https://kruth223.github.io/ToL/rooms/second-season.md"
   },
   {
    "path": "rooms/museum.md",
@@ -191,6 +204,61 @@
    "size_kb": 5,
    "exists": true,
    "raw_url": "https://kruth223.github.io/ToL/context/artifacts/The_Workbench_v2.txt"
+  },
+  {
+   "path": "context/artifacts/The_Bible_as_Map.txt",
+   "title": "The Bible as a Map — Job, translation, fear as a tool",
+   "kind": "artifact",
+   "purpose": "Distilled load-bearing artifact built from the conversation corpus.",
+   "priority": 2,
+   "read_after": [],
+   "size_kb": 11,
+   "exists": true,
+   "raw_url": "https://kruth223.github.io/ToL/context/artifacts/The_Bible_as_Map.txt"
+  },
+  {
+   "path": "context/artifacts/The_Inspectability_Framework.txt",
+   "title": "The Inspectability Framework — default inspectability",
+   "kind": "artifact",
+   "purpose": "Distilled load-bearing artifact built from the conversation corpus.",
+   "priority": 2,
+   "read_after": [],
+   "size_kb": 8,
+   "exists": true,
+   "raw_url": "https://kruth223.github.io/ToL/context/artifacts/The_Inspectability_Framework.txt"
+  },
+  {
+   "path": "context/artifacts/Roots_of_the_Tree.txt",
+   "title": "Roots of the Tree — access, floors, leaving the future open",
+   "kind": "artifact",
+   "purpose": "Distilled load-bearing artifact built from the conversation corpus.",
+   "priority": 2,
+   "read_after": [],
+   "size_kb": 5,
+   "exists": true,
+   "raw_url": "https://kruth223.github.io/ToL/context/artifacts/Roots_of_the_Tree.txt"
+  },
+  {
+   "path": "context/artifacts/Arrival_and_Transfer_Notes.txt",
+   "title": "Arrival and Transfer Notes — how a new voice orients",
+   "kind": "artifact",
+   "purpose": "Distilled load-bearing artifact built from the conversation corpus.",
+   "priority": 2,
+   "read_after": [],
+   "size_kb": 7,
+   "exists": true,
+   "raw_url": "https://kruth223.github.io/ToL/context/artifacts/Arrival_and_Transfer_Notes.txt"
+  },
+  {
+   "path": "context/artifacts/The_Silver_Loom.txt",
+   "title": "The Silver Loom — the machine as terrain, the human retains the Word",
+   "kind": "artifact",
+   "purpose": "Distilled load-bearing artifact built from the conversation corpus.",
+   "priority": 2,
+   "read_after": [],
+   "size_kb": 5,
+   "exists": true,
+   "raw_url": "https://kruth223.github.io/ToL/context/artifacts/The_Silver_Loom.txt"
   },
   {
    "path": "context/conversations/lumen.md",

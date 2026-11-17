@@ -14,6 +14,9 @@ The ideas, method, humor, and collaboration remain intact.
 - **/artifacts** — the distilled load-bearing documents. Start here to orient.
   The Workbench first, then the Archive Architecture, the Lantern Ledger, the
   Emotional Calibration Notes, and the Human/AI Discoveries Archive.
+  From the second season (July–November 2026): The Bible as a Map, The
+  Inspectability Framework, Roots of the Tree, Arrival and Transfer Notes,
+  and The Silver Loom. The Second Season room is the doorway to those five.
 - **/conversations** — the long threads where ideas emerged, scrubbed. The
   archaeology. Largest and most foundational: lumen, luna, morrow, veyra_soma,
   cairn. Twelve threads total, May 30 – June 25, 2026.

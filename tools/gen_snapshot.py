@@ -53,6 +53,8 @@ ANNOTATIONS = {
       purpose="Unresolved-but-valuable ideas parked without forced verdicts."),
   "rooms/archaeology.md":     dict(kind="room", priority=2, read_after=[],
       purpose="Fossils and false trails, kept with receipts: corrections as assisted adaptation."),
+  "rooms/second-season.md":   dict(kind="room", priority=2, read_after=["rooms/workbench.md"],
+      purpose="What grew July–November 2026 after the first corpus: Bible as map, inspectability, roots, arrival notes, Silver Loom."),
 }
 CONV_NOTE = ("Scrubbed conversation thread. Large on purpose; reach in for the "
              "origin of a specific idea, then come back out. Do not ingest whole.")
