@@ -13,9 +13,9 @@
  "how_to_regenerate": "python3 tools/gen_snapshot.py  (from repo root), then commit. Run after any file addition.",
  "reading_order_hint": "priority 1 items first, respecting read_after; priority 3 = targeted digs only",
  "stats": {
-  "indexed_items": 45,
+  "indexed_items": 46,
   "museum_exhibits": 255,
-  "total_indexed_kb": 12852
+  "total_indexed_kb": 12858
  },
  "supersedes": "site-snapshot-v1.json (hand-written, orientation layer only)",
  "items": [
@@ -150,7 +150,7 @@
    "read_after": [
     "museum.html"
    ],
-   "size_kb": 7,
+   "size_kb": 8,
    "exists": true,
    "raw_url": "https://kruth223.github.io/ToL/museum/lotz/index.html"
   },
@@ -218,6 +218,17 @@
    "size_kb": 6,
    "exists": true,
    "raw_url": "https://kruth223.github.io/ToL/museum/lotz/005-monstrous-moonshine.html"
+  },
+  {
+   "path": "museum/lotz/006-impossible-hope.html",
+   "title": "Impossible Hope — LoTz WiFi, Salt Plain Watchers No. 4",
+   "kind": "documentation",
+   "purpose": "Site-level file.",
+   "priority": 2,
+   "read_after": [],
+   "size_kb": 4,
+   "exists": true,
+   "raw_url": "https://kruth223.github.io/ToL/museum/lotz/006-impossible-hope.html"
   },
   {
    "path": "rooms/holding-shelf.md",
@@ -536,7 +547,7 @@
    "read_after": [
     "llms.txt"
    ],
-   "size_kb": 18,
+   "size_kb": 19,
    "exists": true,
    "raw_url": "https://kruth223.github.io/ToL/site-snapshot-v2.json"
   }
