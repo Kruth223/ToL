@@ -1,6 +1,6 @@
 {
  "snapshot_schema": "site-snapshot-v2",
- "generated": "2026-11-17",
+ "generated": "2026-11-18",
  "generated_by": "tools/gen_snapshot.py (derived from manifests; do not hand-edit this JSON)",
  "site": "https://kruth223.github.io/ToL/",
  "description": "Machine-readable index of the Tree of Life / Organisatiom site, derived from the site's own manifests at generation time.",
@@ -13,9 +13,9 @@
  "how_to_regenerate": "python3 tools/gen_snapshot.py  (from repo root), then commit. Run after any file addition.",
  "reading_order_hint": "priority 1 items first, respecting read_after; priority 3 = targeted digs only",
  "stats": {
-  "indexed_items": 42,
+  "indexed_items": 43,
   "museum_exhibits": 255,
-  "total_indexed_kb": 12835
+  "total_indexed_kb": 12840
  },
  "supersedes": "site-snapshot-v1.json (hand-written, orientation layer only)",
  "items": [
@@ -179,6 +179,17 @@
    "size_kb": 4,
    "exists": true,
    "raw_url": "https://kruth223.github.io/ToL/museum/lotz/002-salt-watcher.html"
+  },
+  {
+   "path": "museum/lotz/003-look-back.html",
+   "title": "look_back() — LoTz WiFi, Salt Plain Watchers No. 2",
+   "kind": "documentation",
+   "purpose": "Site-level file.",
+   "priority": 2,
+   "read_after": [],
+   "size_kb": 4,
+   "exists": true,
+   "raw_url": "https://kruth223.github.io/ToL/museum/lotz/003-look-back.html"
   },
   {
    "path": "rooms/holding-shelf.md",
@@ -497,7 +508,7 @@
    "read_after": [
     "llms.txt"
    ],
-   "size_kb": 17,
+   "size_kb": 18,
    "exists": true,
    "raw_url": "https://kruth223.github.io/ToL/site-snapshot-v2.json"
   }
