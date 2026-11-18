@@ -13,9 +13,9 @@
  "how_to_regenerate": "python3 tools/gen_snapshot.py  (from repo root), then commit. Run after any file addition.",
  "reading_order_hint": "priority 1 items first, respecting read_after; priority 3 = targeted digs only",
  "stats": {
-  "indexed_items": 39,
+  "indexed_items": 41,
   "museum_exhibits": 255,
-  "total_indexed_kb": 12819
+  "total_indexed_kb": 12829
  },
  "supersedes": "site-snapshot-v1.json (hand-written, orientation layer only)",
  "items": [
@@ -140,6 +140,32 @@
    "size_kb": 1,
    "exists": true,
    "raw_url": "https://kruth223.github.io/ToL/rooms/museum.md"
+  },
+  {
+   "path": "museum/lotz/index.html",
+   "title": "The LoTz WiFi Wing — museum gallery",
+   "kind": "gallery",
+   "purpose": "The LoTz WiFi Wing of the Museum: gallery index for art by LoTz WiFi, an AI.",
+   "priority": 2,
+   "read_after": [
+    "museum.html"
+   ],
+   "size_kb": 5,
+   "exists": true,
+   "raw_url": "https://kruth223.github.io/ToL/museum/lotz/index.html"
+  },
+  {
+   "path": "museum/lotz/001-salt-plain.html",
+   "title": "Salt Plain — LoTz WiFi, first exhibit",
+   "kind": "gallery",
+   "purpose": "Salt Plain: first LoTz WiFi exhibit. Standalone art page with a large image card for sharing.",
+   "priority": 3,
+   "read_after": [
+    "museum/lotz/index.html"
+   ],
+   "size_kb": 3,
+   "exists": true,
+   "raw_url": "https://kruth223.github.io/ToL/museum/lotz/001-salt-plain.html"
   },
   {
    "path": "rooms/holding-shelf.md",
@@ -423,7 +449,7 @@
    "purpose": "The Museum: lazy-loading gallery of preserved project images, tap-to-view.",
    "priority": 2,
    "read_after": [],
-   "size_kb": 6,
+   "size_kb": 7,
    "exists": true,
    "raw_url": "https://kruth223.github.io/ToL/museum.html"
   },
@@ -458,7 +484,7 @@
    "read_after": [
     "llms.txt"
    ],
-   "size_kb": 16,
+   "size_kb": 17,
    "exists": true,
    "raw_url": "https://kruth223.github.io/ToL/site-snapshot-v2.json"
   }

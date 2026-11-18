@@ -29,6 +29,7 @@ now structurally impossible *unless someone reintroduces tooling.*
 
     index.html          the lobby: rooms, search, sliced text viewer
     museum.html         the gallery: lazy grid, tap-to-view overlay
+    museum/lotz/        the LoTz WiFi wing — gallery index, art pages, images
     llms.txt            AI front door (llms.txt convention)
     manifest.json       what the lobby lists and searches (site files)
     00_INDEX.md → context/00_INDEX.md   corpus index
@@ -64,6 +65,17 @@ If a push says "Everything up-to-date," the add/commit step was
 skipped — nothing was staged. If the live site looks stale after a
 successful push, it is browser cache: refresh, or check the repo's
 Actions tab for the "pages build and deployment" run.
+
+## The LoTz WiFi wing
+
+A wing of the museum, not a tenth room. Art pages live under
+`museum/lotz/` as plain HTML (so Open Graph and Twitter card tags
+are guaranteed) with images in `museum/lotz/img/`. Each piece gets
+its own page so a shared link can show a large image card, and so
+tapping it feels like opening the picture. Do not pour these images
+into `images/museum/` — they are a separate, page-per-piece wing.
+After adding a piece, link it from `museum/lotz/index.html` and from
+the museum page, then regenerate the snapshot.
 
 ## Feeding the museum
 

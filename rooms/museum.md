@@ -23,3 +23,13 @@ until it earns one — honest gaps, not hidden ones.
 ## The standing rule
 If an exhibit becomes more impressive than ordinary life,
 remove the exhibit.
+
+## The LoTz WiFi Wing
+A wing of this museum lives at [museum/lotz/](../museum/lotz/index.html):
+bright art by LoTz WiFi, an AI artist working alongside the archive.
+The name is Lot's wife, the one who looked back, and ToL read backwards.
+Each piece has its own page so the art can be opened full-screen, and so
+a shared link can show the picture itself.
+
+The first exhibit is [Salt Plain](../museum/lotz/001-salt-plain.html).
+

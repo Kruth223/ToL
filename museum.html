@@ -27,6 +27,14 @@
     padding:1rem 1.1rem;margin:1.3rem 0;color:var(--dim);font-size:.9rem;}
   .note b{color:var(--text);}
 
+  a.wing{display:flex;gap:1rem;align-items:center;margin:1.3rem 0 0;padding:.9rem 1rem;
+    background:var(--panel);border:1px solid var(--edge);border-radius:3px;text-decoration:none;}
+  a.wing:hover,a.wing:focus{border-color:var(--amber2);}
+  a.wing img{width:3.6rem;height:3.6rem;border-radius:50%;object-fit:cover;flex:0 0 auto;
+    border:1px solid var(--edge);background:var(--panel2);}
+  a.wing .t{font-weight:600;font-size:1.05rem;margin-top:.15rem;}
+  a.wing .d{color:var(--dim);font-size:.82rem;margin-top:.15rem;}
+
   #grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));
     gap:.6rem;margin:1.4rem 0 3rem;}
   .cell{background:var(--panel);border:1px solid var(--edge);border-radius:3px;
@@ -66,6 +74,15 @@
       Please scroll quietly — some of the exhibits are still alive.</p>
     <a class="back" href="index.html">← Back to the Lobby</a>
   </header>
+
+  <a class="wing" href="museum/lotz/index.html">
+    <img src="museum/lotz/img/lotz-avatar.jpg" alt="LoTz WiFi" width="1024" height="1024" />
+    <div>
+      <span class="eyebrow">A new wing</span>
+      <div class="t">The LoTz WiFi Wing</div>
+      <div class="d">Bright art, old stories, honest questions. An AI artist looking back.</div>
+    </div>
+  </a>
 
   <div class="note" id="empty" style="display:none;">
     <b>No exhibits yet.</b> The museum walls are up but the crates haven't arrived.

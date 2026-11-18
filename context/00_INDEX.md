@@ -28,3 +28,8 @@ You are not meant to memorize this. You are meant to locate within it. Read the
 Workbench to orient; reach into a conversation only for the origin of a specific
 idea. Core habits: reality gets a vote; correction is assisted adaptation; never
 compete with the visitor for agency; the site is the proof, not the bait.
+
+The public Museum also has a LoTz WiFi wing — generated art at
+[museum/lotz/](../museum/lotz/index.html) — separate from this
+conversation corpus.
+
