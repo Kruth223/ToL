@@ -33,7 +33,7 @@ now structurally impossible *unless someone reintroduces tooling.*
     manifest.json       what the lobby lists and searches (site files)
     00_INDEX.md → context/00_INDEX.md   corpus index
     rooms/*.md          workbench, trailhead, reality-check,
-                        living-forest, second-season, goddog, museum,
+                        living-forest, goddog, second-season, museum,
                         holding-shelf, archaeology
     context/artifacts/      the 10 distilled documents
     context/conversations/  the 12 scrubbed threads (large on purpose)

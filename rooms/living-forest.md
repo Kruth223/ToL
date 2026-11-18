@@ -17,6 +17,11 @@ not summarized away.
 - super_saiyan, lumen_2_0, ai_as_cognitive_tool, continuity_test_insights,
   feedback_on_project_files, testing_project_continuity, read_subtitle_file
 
+## A distilled clearing
+- rooms/goddog.md  — the Goddog calibration test (June 23–24): seven
+  voices on whether they would push back or opt out. Its replies are
+  scattered across luna, morrow, veyra_soma, and cairn.
+
 ## How to walk here
 Human: use the search on the lobby page, open a thread, skim. The viewer
 shows big files in slices so your phone survives.

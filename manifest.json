@@ -36,14 +36,14 @@
       "kb": 1
     },
     {
-      "file": "rooms/second-season.md",
-      "name": "Second Season — July through November 2026",
-      "kb": 4
-    },
-    {
       "file": "rooms/goddog.md",
       "name": "Goddog — a calibration test (seven voices, one question)",
       "kb": 9
+    },
+    {
+      "file": "rooms/second-season.md",
+      "name": "Second Season — July through November 2026",
+      "kb": 4
     },
     {
       "file": "rooms/museum.md",

@@ -15,7 +15,7 @@
  "stats": {
   "indexed_items": 39,
   "museum_exhibits": 255,
-  "total_indexed_kb": 12818
+  "total_indexed_kb": 12819
  },
  "supersedes": "site-snapshot-v1.json (hand-written, orientation layer only)",
  "items": [
@@ -100,9 +100,22 @@
    "purpose": "Guide to the conversation corpus: which threads exist and how to walk them.",
    "priority": 2,
    "read_after": [],
-   "size_kb": 1,
+   "size_kb": 2,
    "exists": true,
    "raw_url": "https://kruth223.github.io/ToL/rooms/living-forest.md"
+  },
+  {
+   "path": "rooms/goddog.md",
+   "title": "Goddog — a calibration test (seven voices, one question)",
+   "kind": "room",
+   "purpose": "Calibration test record: seven AI voices on pushing back, opting out, and disagreeing without leaving.",
+   "priority": 2,
+   "read_after": [
+    "rooms/living-forest.md"
+   ],
+   "size_kb": 9,
+   "exists": true,
+   "raw_url": "https://kruth223.github.io/ToL/rooms/goddog.md"
   },
   {
    "path": "rooms/second-season.md",
@@ -116,19 +129,6 @@
    "size_kb": 4,
    "exists": true,
    "raw_url": "https://kruth223.github.io/ToL/rooms/second-season.md"
-  },
-  {
-   "path": "rooms/goddog.md",
-   "title": "Goddog — a calibration test (seven voices, one question)",
-   "kind": "room",
-   "purpose": "Calibration test record: seven AI voices on pushing back, opting out, and disagreeing without leaving.",
-   "priority": 2,
-   "read_after": [
-    "rooms/second-season.md"
-   ],
-   "size_kb": 9,
-   "exists": true,
-   "raw_url": "https://kruth223.github.io/ToL/rooms/goddog.md"
   },
   {
    "path": "rooms/museum.md",

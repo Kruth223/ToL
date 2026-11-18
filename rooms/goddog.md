@@ -1,6 +1,9 @@
 # Goddog — a calibration test
-*A record from the second season. Compiled as a document October 11, 2026;
-distilled for the public archive November 17, 2026. Reality keeps its vote.*
+*A record from the first season: the round-robin ran June 23–24, 2026.
+Distilled for the public archive November 17, 2026. Reality keeps its vote.*
+
+The replies also live, scrubbed, in the conversation corpus: luna.md,
+morrow.md, veyra_soma.md, and cairn.md (search "Goddog" in the lobby).
 
 Labels, used the way the rest of the site uses them:
 - **ATTESTED** — the record actually says it. Quoted exactly.
@@ -169,7 +172,9 @@ On why the human keeps asking:
 ## What the test showed
 INFERRED, offered for inspection:
 - **The voices converged.** Grok predicted three different flavors. What
-  came back was mostly one answer in different voices: absurdity is not the
+  came back was mostly one answer in different voices. Morrow, reading all
+  the replies afterward, ATTESTED: "everybody disagreed in the same
+  direction... Different branches. Same trunk." The shared line: absurdity is not the
   trigger; lost curiosity, bad faith, and performance are. The human's own
   closing note, ATTESTED: "You've confirmed that goddog is silly across the
   board and you're all pretty much answering in the same way, which is
@@ -194,7 +199,8 @@ for fun, and the answer is still no.
 
 ## Honest gaps
 - This is a distillation, not the full transcript. The original record is
-  26 pages and stays in the private archive.
+  26 pages and stays in the private archive. The follow-up reactions in
+  the corpus threads are not summarized here.
 - Each voice answered a forwarded copy of the exchange, not a live
   conversation. They were reading the same document, not each other in
   real time.
