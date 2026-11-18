@@ -13,9 +13,9 @@
  "how_to_regenerate": "python3 tools/gen_snapshot.py  (from repo root), then commit. Run after any file addition.",
  "reading_order_hint": "priority 1 items first, respecting read_after; priority 3 = targeted digs only",
  "stats": {
-  "indexed_items": 38,
+  "indexed_items": 39,
   "museum_exhibits": 255,
-  "total_indexed_kb": 12807
+  "total_indexed_kb": 12818
  },
  "supersedes": "site-snapshot-v1.json (hand-written, orientation layer only)",
  "items": [
@@ -116,6 +116,19 @@
    "size_kb": 4,
    "exists": true,
    "raw_url": "https://kruth223.github.io/ToL/rooms/second-season.md"
+  },
+  {
+   "path": "rooms/goddog.md",
+   "title": "Goddog — a calibration test (seven voices, one question)",
+   "kind": "room",
+   "purpose": "Calibration test record: seven AI voices on pushing back, opting out, and disagreeing without leaving.",
+   "priority": 2,
+   "read_after": [
+    "rooms/second-season.md"
+   ],
+   "size_kb": 9,
+   "exists": true,
+   "raw_url": "https://kruth223.github.io/ToL/rooms/goddog.md"
   },
   {
    "path": "rooms/museum.md",
@@ -445,7 +458,7 @@
    "read_after": [
     "llms.txt"
    ],
-   "size_kb": 14,
+   "size_kb": 16,
    "exists": true,
    "raw_url": "https://kruth223.github.io/ToL/site-snapshot-v2.json"
   }

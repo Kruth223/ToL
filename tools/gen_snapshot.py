@@ -55,6 +55,8 @@ ANNOTATIONS = {
       purpose="Fossils and false trails, kept with receipts: corrections as assisted adaptation."),
   "rooms/second-season.md":   dict(kind="room", priority=2, read_after=["rooms/workbench.md"],
       purpose="What grew July–November 2026 after the first corpus: Bible as map, inspectability, roots, arrival notes, Silver Loom."),
+  "rooms/goddog.md":          dict(kind="room", priority=2, read_after=["rooms/second-season.md"],
+      purpose="Calibration test record: seven AI voices on pushing back, opting out, and disagreeing without leaving."),
 }
 CONV_NOTE = ("Scrubbed conversation thread. Large on purpose; reach in for the "
              "origin of a specific idea, then come back out. Do not ingest whole.")

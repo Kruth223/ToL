@@ -55,7 +55,11 @@ because it is newer.
    because it holds still, as terrain, while human curiosity keeps
    the Word.
 
-The distilled artifacts for all five live in context/artifacts/.
+6. **Goddog.** A deliberately silly question used as a calibration
+   test: would the voices push back, or just nod? Seven answered. The
+   record has its own room: rooms/goddog.md.
+
+The distilled artifacts for the first five live in context/artifacts/.
 They are summaries. They are not a substitute for the sources, and
 they are not the raw July–November conversations, which are not on
 this site yet.

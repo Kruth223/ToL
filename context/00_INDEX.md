@@ -17,6 +17,8 @@ The ideas, method, humor, and collaboration remain intact.
   From the second season (July–November 2026): The Bible as a Map, The
   Inspectability Framework, Roots of the Tree, Arrival and Transfer Notes,
   and The Silver Loom. The Second Season room is the doorway to those five.
+  The Goddog room (rooms/goddog.md) holds a second-season calibration test:
+  seven AI voices on whether they would push back or opt out.
 - **/conversations** — the long threads where ideas emerged, scrubbed. The
   archaeology. Largest and most foundational: lumen, luna, morrow, veyra_soma,
   cairn. Twelve threads total, May 30 – June 25, 2026.

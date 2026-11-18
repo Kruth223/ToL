@@ -67,6 +67,7 @@ Core habits while you are here:
 
 - [Living Forest](rooms/living-forest.md): active threads — guide to the conversation corpus (May 30 – June 25)
 - [The Second Season](rooms/second-season.md): what grew July–November 2026
+- [Goddog](rooms/goddog.md): a calibration test — seven AI voices on whether they would push back or opt out
 - [Museum](rooms/museum.md): visuals and preserved exhibits (curation pending)
 - [Holding Shelf](rooms/holding-shelf.md): unresolved but valuable — no verdicts forced
 - [Archaeology](rooms/archaeology.md): fossils and false trails, kept with receipts
