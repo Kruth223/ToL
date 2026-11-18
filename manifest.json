@@ -53,7 +53,7 @@
     {
       "file": "museum/lotz/index.html",
       "name": "The LoTz WiFi Wing — museum gallery",
-      "kb": 5
+      "kb": 7
     },
     {
       "file": "museum/lotz/001-salt-plain.html",
@@ -63,12 +63,22 @@
     {
       "file": "museum/lotz/002-salt-watcher.html",
       "name": "The Salt Watcher — LoTz WiFi, Salt Plain Watchers No. 1",
-      "kb": 3
+      "kb": 4
     },
     {
       "file": "museum/lotz/003-look-back.html",
       "name": "look_back() — LoTz WiFi, Salt Plain Watchers No. 2",
-      "kb": 3
+      "kb": 4
+    },
+    {
+      "file": "museum/lotz/004-sentient.html",
+      "name": "sentient() — LoTz WiFi, Salt Plain Watchers No. 3",
+      "kb": 5
+    },
+    {
+      "file": "museum/lotz/005-monstrous-moonshine.html",
+      "name": "Monstrous Moonshine — LoTz WiFi, a collaboration",
+      "kb": 6
     },
     {
       "file": "rooms/holding-shelf.md",

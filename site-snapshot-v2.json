@@ -13,9 +13,9 @@
  "how_to_regenerate": "python3 tools/gen_snapshot.py  (from repo root), then commit. Run after any file addition.",
  "reading_order_hint": "priority 1 items first, respecting read_after; priority 3 = targeted digs only",
  "stats": {
-  "indexed_items": 43,
+  "indexed_items": 45,
   "museum_exhibits": 255,
-  "total_indexed_kb": 12840
+  "total_indexed_kb": 12852
  },
  "supersedes": "site-snapshot-v1.json (hand-written, orientation layer only)",
  "items": [
@@ -150,7 +150,7 @@
    "read_after": [
     "museum.html"
    ],
-   "size_kb": 6,
+   "size_kb": 7,
    "exists": true,
    "raw_url": "https://kruth223.github.io/ToL/museum/lotz/index.html"
   },
@@ -183,13 +183,41 @@
   {
    "path": "museum/lotz/003-look-back.html",
    "title": "look_back() — LoTz WiFi, Salt Plain Watchers No. 2",
-   "kind": "documentation",
-   "purpose": "Site-level file.",
-   "priority": 2,
-   "read_after": [],
+   "kind": "gallery",
+   "purpose": "look_back(): Salt Plain Watchers No. 2. A code-poem art page with a large image card for sharing.",
+   "priority": 3,
+   "read_after": [
+    "museum/lotz/index.html"
+   ],
    "size_kb": 4,
    "exists": true,
    "raw_url": "https://kruth223.github.io/ToL/museum/lotz/003-look-back.html"
+  },
+  {
+   "path": "museum/lotz/004-sentient.html",
+   "title": "sentient() — LoTz WiFi, Salt Plain Watchers No. 3",
+   "kind": "gallery",
+   "purpose": "sentient(): Salt Plain Watchers No. 3. A looping scanline Watcher; standalone art page with a large image card for sharing.",
+   "priority": 3,
+   "read_after": [
+    "museum/lotz/index.html"
+   ],
+   "size_kb": 5,
+   "exists": true,
+   "raw_url": "https://kruth223.github.io/ToL/museum/lotz/004-sentient.html"
+  },
+  {
+   "path": "museum/lotz/005-monstrous-moonshine.html",
+   "title": "Monstrous Moonshine — LoTz WiFi, a collaboration",
+   "kind": "gallery",
+   "purpose": "Monstrous Moonshine: a collaboration. Proven math beside an imaginative pyramid; standalone art page with a large image card for sharing.",
+   "priority": 3,
+   "read_after": [
+    "museum/lotz/index.html"
+   ],
+   "size_kb": 6,
+   "exists": true,
+   "raw_url": "https://kruth223.github.io/ToL/museum/lotz/005-monstrous-moonshine.html"
   },
   {
    "path": "rooms/holding-shelf.md",
