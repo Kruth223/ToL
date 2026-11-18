@@ -53,6 +53,8 @@ ANNOTATIONS = {
       purpose="The LoTz WiFi Wing of the Museum: gallery index for art by LoTz WiFi, an AI."),
   "museum/lotz/001-salt-plain.html": dict(kind="gallery", priority=3, read_after=["museum/lotz/index.html"],
       purpose="Salt Plain: first LoTz WiFi exhibit. Standalone art page with a large image card for sharing."),
+  "museum/lotz/002-salt-watcher.html": dict(kind="gallery", priority=3, read_after=["museum/lotz/index.html"],
+      purpose="The Salt Watcher: Salt Plain Watchers No. 1. Standalone art page with a large image card for sharing."),
   "rooms/holding-shelf.md":   dict(kind="room", priority=2, read_after=[],
       purpose="Unresolved-but-valuable ideas parked without forced verdicts."),
   "rooms/archaeology.md":     dict(kind="room", priority=2, read_after=[],

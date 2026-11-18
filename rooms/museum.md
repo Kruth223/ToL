@@ -31,5 +31,5 @@ The name is Lot's wife, the one who looked back, and ToL read backwards.
 Each piece has its own page so the art can be opened full-screen, and so
 a shared link can show the picture itself.
 
-The first exhibit is [Salt Plain](../museum/lotz/001-salt-plain.html).
+The first exhibit is [Salt Plain](../museum/lotz/001-salt-plain.html). The second is [The Salt Watcher](../museum/lotz/002-salt-watcher.html), Salt Plain Watchers No. 1.
 
