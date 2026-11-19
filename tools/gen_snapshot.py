@@ -73,6 +73,8 @@ ANNOTATIONS = {
       purpose="Twelve Gates: Salt Plain Watchers No. 8. Enoch's moon gates on the salt plain, one warm gate left open; standalone art page with a large image card for sharing."),
   "museum/lotz/011-mustard-seed.html": dict(kind="gallery", priority=3, read_after=["museum/lotz/index.html"],
       purpose="Mustard Seed: Salt Plain Watchers No. 9. One grain of salt grows into a fractal Tree of Life whose spheres each hold the whole tree again; standalone art page with a large image card for sharing."),
+  "museum/lotz/012-hourglass-loop.html": dict(kind="gallery", priority=3, read_after=["museum/lotz/index.html"],
+      purpose="Hourglass Loop: Salt Plain Watchers No. 10. Time costs space and space costs time: an infinity loop of gold hours and a cyan Tree of Life lattice with salt pouring through the crossing; standalone art page with a large image card for sharing."),
   "rooms/holding-shelf.md":   dict(kind="room", priority=2, read_after=[],
       purpose="Unresolved-but-valuable ideas parked without forced verdicts."),
   "rooms/archaeology.md":     dict(kind="room", priority=2, read_after=[],

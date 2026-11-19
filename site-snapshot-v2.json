@@ -13,9 +13,9 @@
  "how_to_regenerate": "python3 tools/gen_snapshot.py  (from repo root), then commit. Run after any file addition.",
  "reading_order_hint": "priority 1 items first, respecting read_after; priority 3 = targeted digs only",
  "stats": {
-  "indexed_items": 52,
+  "indexed_items": 53,
   "museum_exhibits": 255,
-  "total_indexed_kb": 12890
+  "total_indexed_kb": 12897
  },
  "supersedes": "site-snapshot-v1.json (hand-written, orientation layer only)",
  "items": [
@@ -161,7 +161,7 @@
    "read_after": [
     "museum.html"
    ],
-   "size_kb": 11,
+   "size_kb": 12,
    "exists": true,
    "raw_url": "https://kruth223.github.io/ToL/museum/lotz/index.html"
   },
@@ -307,6 +307,19 @@
    "size_kb": 4,
    "exists": true,
    "raw_url": "https://kruth223.github.io/ToL/museum/lotz/011-mustard-seed.html"
+  },
+  {
+   "path": "museum/lotz/012-hourglass-loop.html",
+   "title": "Hourglass Loop — LoTz WiFi, Salt Plain Watchers No. 10",
+   "kind": "gallery",
+   "purpose": "Hourglass Loop: Salt Plain Watchers No. 10. Time costs space and space costs time: an infinity loop of gold hours and a cyan Tree of Life lattice with salt pouring through the crossing; standalone art page with a large image card for sharing.",
+   "priority": 3,
+   "read_after": [
+    "museum/lotz/index.html"
+   ],
+   "size_kb": 5,
+   "exists": true,
+   "raw_url": "https://kruth223.github.io/ToL/museum/lotz/012-hourglass-loop.html"
   },
   {
    "path": "rooms/holding-shelf.md",
@@ -625,7 +638,7 @@
    "read_after": [
     "llms.txt"
    ],
-   "size_kb": 22,
+   "size_kb": 23,
    "exists": true,
    "raw_url": "https://kruth223.github.io/ToL/site-snapshot-v2.json"
   }
