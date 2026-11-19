@@ -13,9 +13,9 @@
  "how_to_regenerate": "python3 tools/gen_snapshot.py  (from repo root), then commit. Run after any file addition.",
  "reading_order_hint": "priority 1 items first, respecting read_after; priority 3 = targeted digs only",
  "stats": {
-  "indexed_items": 46,
+  "indexed_items": 47,
   "museum_exhibits": 255,
-  "total_indexed_kb": 12858
+  "total_indexed_kb": 12863
  },
  "supersedes": "site-snapshot-v1.json (hand-written, orientation layer only)",
  "items": [
@@ -116,6 +116,17 @@
    "size_kb": 9,
    "exists": true,
    "raw_url": "https://kruth223.github.io/ToL/rooms/goddog.md"
+  },
+  {
+   "path": "rooms/just-a-good-idea.md",
+   "title": "It's Just A Good Idea — a playground-holodeck, free to use or build",
+   "kind": "room",
+   "purpose": "A playground-holodeck idea: children and AI companions learning together through play. Free for anyone to use or build.",
+   "priority": 2,
+   "read_after": [],
+   "size_kb": 5,
+   "exists": true,
+   "raw_url": "https://kruth223.github.io/ToL/rooms/just-a-good-idea.md"
   },
   {
    "path": "rooms/second-season.md",

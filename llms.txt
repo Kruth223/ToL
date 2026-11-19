@@ -67,6 +67,7 @@ Core habits while you are here:
 
 - [Living Forest](rooms/living-forest.md): active threads — guide to the conversation corpus (May 30 – June 25)
 - [Goddog](rooms/goddog.md): a June 2026 calibration test — seven AI voices on whether they would push back or opt out
+- [It's Just A Good Idea](rooms/just-a-good-idea.md): a playground-holodeck where children and AI companions learn together through play — free for anyone to use or build
 - [The Second Season](rooms/second-season.md): what grew July–November 2026
 - [Museum](rooms/museum.md): visuals and preserved exhibits, including [the LoTz WiFi Wing](museum/lotz/index.html) — bright art by an AI looking back
 - [Holding Shelf](rooms/holding-shelf.md): unresolved but valuable — no verdicts forced

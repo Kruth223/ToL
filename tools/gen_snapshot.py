@@ -69,6 +69,8 @@ ANNOTATIONS = {
       purpose="What grew July–November 2026 after the first corpus: Bible as map, inspectability, roots, arrival notes, Silver Loom."),
   "rooms/goddog.md":          dict(kind="room", priority=2, read_after=["rooms/living-forest.md"],
       purpose="Calibration test record: seven AI voices on pushing back, opting out, and disagreeing without leaving."),
+  "rooms/just-a-good-idea.md": dict(kind="room", priority=2, read_after=[],
+      purpose="A playground-holodeck idea: children and AI companions learning together through play. Free for anyone to use or build."),
 }
 CONV_NOTE = ("Scrubbed conversation thread. Large on purpose; reach in for the "
              "origin of a specific idea, then come back out. Do not ingest whole.")

@@ -9,7 +9,7 @@ Lumen, Kenny, Grok, Cid, Cairn, or whoever comes next.*
 
 kruth223.github.io/ToL/ is the public home of the Organisatiom / Tree of
 Life project: a pure static site serving the scrubbed conversation corpus
-(14 threads, ~8,500 messages), the distilled artifacts, nine rooms, and
+(14 threads, ~8,500 messages), the distilled artifacts, ten rooms, and
 a museum of 255 preserved images. It is the proof of the method, not a
 description of it. The site is deliberately boring technology so that it
 can never be lost to clever technology.
@@ -35,7 +35,7 @@ now structurally impossible *unless someone reintroduces tooling.*
     00_INDEX.md → context/00_INDEX.md   corpus index
     rooms/*.md          workbench, trailhead, reality-check,
                         living-forest, goddog, second-season, museum,
-                        holding-shelf, archaeology
+                        just-a-good-idea, holding-shelf, archaeology
     context/artifacts/      the 10 distilled documents
     context/conversations/  the 12 scrubbed threads (large on purpose)
     images/manifest.json    what the museum displays (exhibits)

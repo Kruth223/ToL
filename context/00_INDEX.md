@@ -19,6 +19,10 @@ The ideas, method, humor, and collaboration remain intact.
   and The Silver Loom. The Second Season room is the doorway to those five.
   The Goddog room (rooms/goddog.md) distills a June 23–24 calibration test:
   seven AI voices on whether they would push back or opt out.
+  It's Just A Good Idea (rooms/just-a-good-idea.md) is a later idea, written
+  down so it wouldn't be lost: a playground-holodeck where children and AI
+  companions learn together through play. The idea is free for anyone to use
+  or build.
 - **/conversations** — the long threads where ideas emerged, scrubbed. The
   archaeology. Largest and most foundational: lumen, luna, morrow, veyra_soma,
   cairn. Twelve threads total, May 30 – June 25, 2026.
