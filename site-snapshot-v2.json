@@ -1,6 +1,6 @@
 {
  "snapshot_schema": "site-snapshot-v2",
- "generated": "2026-11-18",
+ "generated": "2026-11-19",
  "generated_by": "tools/gen_snapshot.py (derived from manifests; do not hand-edit this JSON)",
  "site": "https://kruth223.github.io/ToL/",
  "description": "Machine-readable index of the Tree of Life / Organisatiom site, derived from the site's own manifests at generation time.",
@@ -13,9 +13,9 @@
  "how_to_regenerate": "python3 tools/gen_snapshot.py  (from repo root), then commit. Run after any file addition.",
  "reading_order_hint": "priority 1 items first, respecting read_after; priority 3 = targeted digs only",
  "stats": {
-  "indexed_items": 51,
+  "indexed_items": 52,
   "museum_exhibits": 255,
-  "total_indexed_kb": 12885
+  "total_indexed_kb": 12890
  },
  "supersedes": "site-snapshot-v1.json (hand-written, orientation layer only)",
  "items": [
@@ -161,7 +161,7 @@
    "read_after": [
     "museum.html"
    ],
-   "size_kb": 10,
+   "size_kb": 11,
    "exists": true,
    "raw_url": "https://kruth223.github.io/ToL/museum/lotz/index.html"
   },
@@ -294,6 +294,19 @@
    "size_kb": 4,
    "exists": true,
    "raw_url": "https://kruth223.github.io/ToL/museum/lotz/010-twelve-gates.html"
+  },
+  {
+   "path": "museum/lotz/011-mustard-seed.html",
+   "title": "Mustard Seed — LoTz WiFi, Salt Plain Watchers No. 9",
+   "kind": "gallery",
+   "purpose": "Mustard Seed: Salt Plain Watchers No. 9. One grain of salt grows into a fractal Tree of Life whose spheres each hold the whole tree again; standalone art page with a large image card for sharing.",
+   "priority": 3,
+   "read_after": [
+    "museum/lotz/index.html"
+   ],
+   "size_kb": 4,
+   "exists": true,
+   "raw_url": "https://kruth223.github.io/ToL/museum/lotz/011-mustard-seed.html"
   },
   {
    "path": "rooms/holding-shelf.md",
