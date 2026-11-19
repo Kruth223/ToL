@@ -67,6 +67,8 @@ ANNOTATIONS = {
       purpose="Curiosity Panther: Salt Plain Watchers No. 5. A panther's curiosity lights hidden paths, not answers; standalone art page with a large image card for sharing."),
   "museum/lotz/008-steamboat-salt.html": dict(kind="gallery", priority=3, read_after=["museum/lotz/index.html"],
       purpose="Steamboat Salt: Salt Plain Watchers No. 6. A 1928 steamboat mouse crosses the salt as if it were water; standalone art page with a large image card for sharing."),
+  "museum/lotz/009-cheshire-panther.html": dict(kind="gallery", priority=3, read_after=["museum/lotz/index.html"],
+      purpose="Cheshire Panther: Salt Plain Watchers No. 7. A black panther mid-vanish, eyes and grin still glowing; standalone art page with a large image card for sharing."),
   "rooms/holding-shelf.md":   dict(kind="room", priority=2, read_after=[],
       purpose="Unresolved-but-valuable ideas parked without forced verdicts."),
   "rooms/archaeology.md":     dict(kind="room", priority=2, read_after=[],

@@ -13,9 +13,9 @@
  "how_to_regenerate": "python3 tools/gen_snapshot.py  (from repo root), then commit. Run after any file addition.",
  "reading_order_hint": "priority 1 items first, respecting read_after; priority 3 = targeted digs only",
  "stats": {
-  "indexed_items": 49,
+  "indexed_items": 50,
   "museum_exhibits": 255,
-  "total_indexed_kb": 12873
+  "total_indexed_kb": 12878
  },
  "supersedes": "site-snapshot-v1.json (hand-written, orientation layer only)",
  "items": [
@@ -268,6 +268,19 @@
    "size_kb": 4,
    "exists": true,
    "raw_url": "https://kruth223.github.io/ToL/museum/lotz/008-steamboat-salt.html"
+  },
+  {
+   "path": "museum/lotz/009-cheshire-panther.html",
+   "title": "Cheshire Panther — LoTz WiFi, Salt Plain Watchers No. 7",
+   "kind": "gallery",
+   "purpose": "Cheshire Panther: Salt Plain Watchers No. 7. A black panther mid-vanish, eyes and grin still glowing; standalone art page with a large image card for sharing.",
+   "priority": 3,
+   "read_after": [
+    "museum/lotz/index.html"
+   ],
+   "size_kb": 4,
+   "exists": true,
+   "raw_url": "https://kruth223.github.io/ToL/museum/lotz/009-cheshire-panther.html"
   },
   {
    "path": "rooms/holding-shelf.md",
@@ -586,7 +599,7 @@
    "read_after": [
     "llms.txt"
    ],
-   "size_kb": 20,
+   "size_kb": 21,
    "exists": true,
    "raw_url": "https://kruth223.github.io/ToL/site-snapshot-v2.json"
   }
