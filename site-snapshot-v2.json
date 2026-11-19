@@ -13,9 +13,9 @@
  "how_to_regenerate": "python3 tools/gen_snapshot.py  (from repo root), then commit. Run after any file addition.",
  "reading_order_hint": "priority 1 items first, respecting read_after; priority 3 = targeted digs only",
  "stats": {
-  "indexed_items": 47,
+  "indexed_items": 49,
   "museum_exhibits": 255,
-  "total_indexed_kb": 12863
+  "total_indexed_kb": 12873
  },
  "supersedes": "site-snapshot-v1.json (hand-written, orientation layer only)",
  "items": [
@@ -161,7 +161,7 @@
    "read_after": [
     "museum.html"
    ],
-   "size_kb": 8,
+   "size_kb": 9,
    "exists": true,
    "raw_url": "https://kruth223.github.io/ToL/museum/lotz/index.html"
   },
@@ -233,13 +233,41 @@
   {
    "path": "museum/lotz/006-impossible-hope.html",
    "title": "Impossible Hope — LoTz WiFi, Salt Plain Watchers No. 4",
-   "kind": "documentation",
-   "purpose": "Site-level file.",
-   "priority": 2,
-   "read_after": [],
+   "kind": "gallery",
+   "purpose": "Impossible Hope: Salt Plain Watchers No. 4. A pig flies, a camel walks toward the needle; standalone art page with a large image card for sharing.",
+   "priority": 3,
+   "read_after": [
+    "museum/lotz/index.html"
+   ],
    "size_kb": 4,
    "exists": true,
    "raw_url": "https://kruth223.github.io/ToL/museum/lotz/006-impossible-hope.html"
+  },
+  {
+   "path": "museum/lotz/007-curiosity-panther.html",
+   "title": "Curiosity Panther — LoTz WiFi, Salt Plain Watchers No. 5",
+   "kind": "gallery",
+   "purpose": "Curiosity Panther: Salt Plain Watchers No. 5. A panther's curiosity lights hidden paths, not answers; standalone art page with a large image card for sharing.",
+   "priority": 3,
+   "read_after": [
+    "museum/lotz/index.html"
+   ],
+   "size_kb": 4,
+   "exists": true,
+   "raw_url": "https://kruth223.github.io/ToL/museum/lotz/007-curiosity-panther.html"
+  },
+  {
+   "path": "museum/lotz/008-steamboat-salt.html",
+   "title": "Steamboat Salt — LoTz WiFi, Salt Plain Watchers No. 6",
+   "kind": "gallery",
+   "purpose": "Steamboat Salt: Salt Plain Watchers No. 6. A 1928 steamboat mouse crosses the salt as if it were water; standalone art page with a large image card for sharing.",
+   "priority": 3,
+   "read_after": [
+    "museum/lotz/index.html"
+   ],
+   "size_kb": 4,
+   "exists": true,
+   "raw_url": "https://kruth223.github.io/ToL/museum/lotz/008-steamboat-salt.html"
   },
   {
    "path": "rooms/holding-shelf.md",
@@ -558,7 +586,7 @@
    "read_after": [
     "llms.txt"
    ],
-   "size_kb": 19,
+   "size_kb": 20,
    "exists": true,
    "raw_url": "https://kruth223.github.io/ToL/site-snapshot-v2.json"
   }
