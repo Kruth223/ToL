@@ -13,9 +13,9 @@
  "how_to_regenerate": "python3 tools/gen_snapshot.py  (from repo root), then commit. Run after any file addition.",
  "reading_order_hint": "priority 1 items first, respecting read_after; priority 3 = targeted digs only",
  "stats": {
-  "indexed_items": 50,
+  "indexed_items": 51,
   "museum_exhibits": 255,
-  "total_indexed_kb": 12878
+  "total_indexed_kb": 12885
  },
  "supersedes": "site-snapshot-v1.json (hand-written, orientation layer only)",
  "items": [
@@ -148,7 +148,7 @@
    "purpose": "Museum room page: why it exists, how exhibits arrive, the standing curation rule.",
    "priority": 3,
    "read_after": [],
-   "size_kb": 2,
+   "size_kb": 3,
    "exists": true,
    "raw_url": "https://kruth223.github.io/ToL/rooms/museum.md"
   },
@@ -161,7 +161,7 @@
    "read_after": [
     "museum.html"
    ],
-   "size_kb": 9,
+   "size_kb": 10,
    "exists": true,
    "raw_url": "https://kruth223.github.io/ToL/museum/lotz/index.html"
   },
@@ -281,6 +281,19 @@
    "size_kb": 4,
    "exists": true,
    "raw_url": "https://kruth223.github.io/ToL/museum/lotz/009-cheshire-panther.html"
+  },
+  {
+   "path": "museum/lotz/010-twelve-gates.html",
+   "title": "Twelve Gates — LoTz WiFi, Salt Plain Watchers No. 8",
+   "kind": "gallery",
+   "purpose": "Twelve Gates: Salt Plain Watchers No. 8. Enoch's moon gates on the salt plain, one warm gate left open; standalone art page with a large image card for sharing.",
+   "priority": 3,
+   "read_after": [
+    "museum/lotz/index.html"
+   ],
+   "size_kb": 4,
+   "exists": true,
+   "raw_url": "https://kruth223.github.io/ToL/museum/lotz/010-twelve-gates.html"
   },
   {
    "path": "rooms/holding-shelf.md",
@@ -599,7 +612,7 @@
    "read_after": [
     "llms.txt"
    ],
-   "size_kb": 21,
+   "size_kb": 22,
    "exists": true,
    "raw_url": "https://kruth223.github.io/ToL/site-snapshot-v2.json"
   }
