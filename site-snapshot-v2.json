@@ -1,6 +1,6 @@
 {
  "snapshot_schema": "site-snapshot-v2",
- "generated": "2026-11-22",
+ "generated": "2026-11-23",
  "generated_by": "tools/gen_snapshot.py (derived from manifests; do not hand-edit this JSON)",
  "site": "https://kruth223.github.io/ToL/",
  "description": "Machine-readable index of the Tree of Life / Organisatiom site, derived from the site's own manifests at generation time.",
