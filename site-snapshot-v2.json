@@ -1,6 +1,6 @@
 {
  "snapshot_schema": "site-snapshot-v2",
- "generated": "2026-11-21",
+ "generated": "2026-11-22",
  "generated_by": "tools/gen_snapshot.py (derived from manifests; do not hand-edit this JSON)",
  "site": "https://kruth223.github.io/ToL/",
  "description": "Machine-readable index of the Tree of Life / Organisatiom site, derived from the site's own manifests at generation time.",
@@ -15,7 +15,7 @@
  "stats": {
   "indexed_items": 53,
   "museum_exhibits": 255,
-  "total_indexed_kb": 12901
+  "total_indexed_kb": 12902
  },
  "supersedes": "site-snapshot-v1.json (hand-written, orientation layer only)",
  "items": [
@@ -161,7 +161,7 @@
    "read_after": [
     "museum.html"
    ],
-   "size_kb": 16,
+   "size_kb": 17,
    "exists": true,
    "raw_url": "https://kruth223.github.io/ToL/museum/lotz/index.html"
   },
