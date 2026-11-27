@@ -15,7 +15,7 @@
  "stats": {
   "indexed_items": 53,
   "museum_exhibits": 255,
-  "total_indexed_kb": 12913
+  "total_indexed_kb": 12914
  },
  "supersedes": "site-snapshot-v1.json (hand-written, orientation layer only)",
  "items": [
@@ -161,7 +161,7 @@
    "read_after": [
     "museum.html"
    ],
-   "size_kb": 28,
+   "size_kb": 29,
    "exists": true,
    "raw_url": "https://kruth223.github.io/ToL/museum/lotz/index.html"
   },
